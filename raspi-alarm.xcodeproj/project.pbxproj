@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0640ABEAACB0E8781EBDC4 /* Pods_raspi_alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0282A98CAD674BB2D5FE940A /* Pods_raspi_alarm.framework */; };
 		9F2CE33921CF1DC8006BFF10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE33821CF1DC8006BFF10 /* AppDelegate.swift */; };
 		9F2CE33B21CF1DC8006BFF10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE33A21CF1DC8006BFF10 /* ViewController.swift */; };
 		9F2CE33E21CF1DC8006BFF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CE33C21CF1DC8006BFF10 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		9F2CE34321CF1DCB006BFF10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CE34121CF1DCB006BFF10 /* LaunchScreen.storyboard */; };
 		9F2CE34E21CF1DCB006BFF10 /* raspi_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE34D21CF1DCB006BFF10 /* raspi_alarmTests.swift */; };
 		9F2CE35921CF1DCB006BFF10 /* raspi_alarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE35821CF1DCB006BFF10 /* raspi_alarmUITests.swift */; };
+		9F2CE36E21CF9DF7006BFF10 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE36D21CF9DF7006BFF10 /* Networker.swift */; };
+		9F712B8A21E19D3800A68D81 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F712B8921E19D3800A68D81 /* Colors.swift */; };
+		E134CAE2B6A5D572FD40D27A /* Pods_raspi_alarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D7F18AA4DFEDF1BA6EFCAF /* Pods_raspi_alarmTests.framework */; };
+		F6B1F05725AD432530538DE3 /* Pods_raspi_alarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F65F5ACBAAF917E5D457511 /* Pods_raspi_alarmUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0282A98CAD674BB2D5FE940A /* Pods_raspi_alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raspi_alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F65F5ACBAAF917E5D457511 /* Pods_raspi_alarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raspi_alarmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C805663FFD9433E95696044 /* Pods-raspi-alarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests.release.xcconfig"; sourceTree = "<group>"; };
+		6A75D169B1AC9ECEBB8CDCFA /* Pods-raspi-alarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76D7F18AA4DFEDF1BA6EFCAF /* Pods_raspi_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raspi_alarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2CE33521CF1DC8006BFF10 /* raspi-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "raspi-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2CE33821CF1DC8006BFF10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2CE33A21CF1DC8006BFF10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		9F2CE35421CF1DCB006BFF10 /* raspi-alarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "raspi-alarmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2CE35821CF1DCB006BFF10 /* raspi_alarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raspi_alarmUITests.swift; sourceTree = "<group>"; };
 		9F2CE35A21CF1DCB006BFF10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2CE36D21CF9DF7006BFF10 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		9F712B8921E19D3800A68D81 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BB164B01C7CA2DE955E096D9 /* Pods-raspi-alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm.debug.xcconfig"; sourceTree = "<group>"; };
+		CF59463F9045EBAA68453390 /* Pods-raspi-alarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EEEAF7193C047938560BAB52 /* Pods-raspi-alarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD997FECCA46E41F035D0DE9 /* Pods-raspi-alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0640ABEAACB0E8781EBDC4 /* Pods_raspi_alarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E134CAE2B6A5D572FD40D27A /* Pods_raspi_alarmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B1F05725AD432530538DE3 /* Pods_raspi_alarmUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				9F2CE34C21CF1DCB006BFF10 /* raspi-alarmTests */,
 				9F2CE35721CF1DCB006BFF10 /* raspi-alarmUITests */,
 				9F2CE33621CF1DC8006BFF10 /* Products */,
+				D004A673792AF996C2149C53 /* Pods */,
+				D2689EFED839530B39DC610F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,8 @@
 			children = (
 				9F2CE33821CF1DC8006BFF10 /* AppDelegate.swift */,
 				9F2CE33A21CF1DC8006BFF10 /* ViewController.swift */,
+				9F712B8921E19D3800A68D81 /* Colors.swift */,
+				9F2CE36D21CF9DF7006BFF10 /* Networker.swift */,
 				9F2CE33C21CF1DC8006BFF10 /* Main.storyboard */,
 				9F2CE33F21CF1DCB006BFF10 /* Assets.xcassets */,
 				9F2CE34121CF1DCB006BFF10 /* LaunchScreen.storyboard */,
@@ -125,6 +148,29 @@
 			path = "raspi-alarmUITests";
 			sourceTree = "<group>";
 		};
+		D004A673792AF996C2149C53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB164B01C7CA2DE955E096D9 /* Pods-raspi-alarm.debug.xcconfig */,
+				FD997FECCA46E41F035D0DE9 /* Pods-raspi-alarm.release.xcconfig */,
+				6A75D169B1AC9ECEBB8CDCFA /* Pods-raspi-alarmTests.debug.xcconfig */,
+				3C805663FFD9433E95696044 /* Pods-raspi-alarmTests.release.xcconfig */,
+				EEEAF7193C047938560BAB52 /* Pods-raspi-alarmUITests.debug.xcconfig */,
+				CF59463F9045EBAA68453390 /* Pods-raspi-alarmUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2689EFED839530B39DC610F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0282A98CAD674BB2D5FE940A /* Pods_raspi_alarm.framework */,
+				76D7F18AA4DFEDF1BA6EFCAF /* Pods_raspi_alarmTests.framework */,
+				0F65F5ACBAAF917E5D457511 /* Pods_raspi_alarmUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F2CE35D21CF1DCB006BFF10 /* Build configuration list for PBXNativeTarget "raspi-alarm" */;
 			buildPhases = (
+				7C701BD392AB968CBEDAAFCC /* [CP] Check Pods Manifest.lock */,
 				9F2CE33121CF1DC8006BFF10 /* Sources */,
 				9F2CE33221CF1DC8006BFF10 /* Frameworks */,
 				9F2CE33321CF1DC8006BFF10 /* Resources */,
+				28D5EFF1D8BA7FBF31D870BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F2CE36021CF1DCB006BFF10 /* Build configuration list for PBXNativeTarget "raspi-alarmTests" */;
 			buildPhases = (
+				2CAACCCE9F1D8ED88AC39EA3 /* [CP] Check Pods Manifest.lock */,
 				9F2CE34521CF1DCB006BFF10 /* Sources */,
 				9F2CE34621CF1DCB006BFF10 /* Frameworks */,
 				9F2CE34721CF1DCB006BFF10 /* Resources */,
@@ -167,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F2CE36321CF1DCB006BFF10 /* Build configuration list for PBXNativeTarget "raspi-alarmUITests" */;
 			buildPhases = (
+				128649949FF63A4362838649 /* [CP] Check Pods Manifest.lock */,
 				9F2CE35021CF1DCB006BFF10 /* Sources */,
 				9F2CE35121CF1DCB006BFF10 /* Frameworks */,
 				9F2CE35221CF1DCB006BFF10 /* Resources */,
@@ -251,13 +301,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		128649949FF63A4362838649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-raspi-alarmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28D5EFF1D8BA7FBF31D870BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CAACCCE9F1D8ED88AC39EA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-raspi-alarmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C701BD392AB968CBEDAAFCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-raspi-alarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F2CE33121CF1DC8006BFF10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F2CE33B21CF1DC8006BFF10 /* ViewController.swift in Sources */,
+				9F712B8A21E19D3800A68D81 /* Colors.swift in Sources */,
 				9F2CE33921CF1DC8006BFF10 /* AppDelegate.swift in Sources */,
+				9F2CE36E21CF9DF7006BFF10 /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +557,7 @@
 		};
 		9F2CE35E21CF1DCB006BFF10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB164B01C7CA2DE955E096D9 /* Pods-raspi-alarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +576,7 @@
 		};
 		9F2CE35F21CF1DCB006BFF10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD997FECCA46E41F035D0DE9 /* Pods-raspi-alarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +595,7 @@
 		};
 		9F2CE36121CF1DCB006BFF10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A75D169B1AC9ECEBB8CDCFA /* Pods-raspi-alarmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +617,7 @@
 		};
 		9F2CE36221CF1DCB006BFF10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C805663FFD9433E95696044 /* Pods-raspi-alarmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +639,7 @@
 		};
 		9F2CE36421CF1DCB006BFF10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEAF7193C047938560BAB52 /* Pods-raspi-alarmUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +660,7 @@
 		};
 		9F2CE36521CF1DCB006BFF10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF59463F9045EBAA68453390 /* Pods-raspi-alarmUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

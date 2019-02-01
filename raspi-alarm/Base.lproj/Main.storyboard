@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,84 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="raspi_alarm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="10" translatesAutoresizingMaskIntoConstraints="NO" id="sXC-c2-uYg">
+                                <rect key="frame" x="0.0" y="185" width="375" height="216"/>
+                                <color key="tintColor" red="1" green="0.663292781527272" blue="0.40139118048171629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <date key="date" timeIntervalSinceReferenceDate="567221940.38067198">
+                                    <!--2018-12-23 01:39:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pl"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkM-AD-9db">
+                                <rect key="frame" x="289" y="107" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="s51-RX-SFe"/>
+                                    <constraint firstAttribute="width" secondItem="dkM-AD-9db" secondAttribute="height" multiplier="1:1" id="zVH-Fl-5w2"/>
+                                </constraints>
+                                <state key="normal" title="SET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="setAlarmClock" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7s-GA-F6K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGC-3b-081">
+                                <rect key="frame" x="10" y="431" width="372" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="j0Z-vn-NaT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hL3-E1-wxA">
+                                <rect key="frame" x="10" y="395" width="117" height="29"/>
+                                <segments>
+                                    <segment title="Spotify"/>
+                                    <segment title="Luz"/>
+                                </segments>
+                                <color key="tintColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BGC-3b-081" firstAttribute="top" secondItem="hL3-E1-wxA" secondAttribute="bottom" constant="8" symbolic="YES" id="2RN-yU-zkc"/>
+                            <constraint firstItem="BGC-3b-081" firstAttribute="leading" secondItem="hL3-E1-wxA" secondAttribute="trailing" constant="-117" id="6Oz-fY-MeM"/>
+                            <constraint firstItem="sXC-c2-uYg" firstAttribute="top" secondItem="dkM-AD-9db" secondAttribute="bottom" constant="8" symbolic="YES" id="AVG-8l-ohY"/>
+                            <constraint firstItem="dkM-AD-9db" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Cqo-Tv-JZu"/>
+                            <constraint firstItem="hL3-E1-wxA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IOl-1T-yk0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BGC-3b-081" secondAttribute="trailing" constant="-23" id="JxP-gm-NKm"/>
+                            <constraint firstItem="sXC-c2-uYg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MTP-wg-kip"/>
+                            <constraint firstItem="BGC-3b-081" firstAttribute="leading" secondItem="sXC-c2-uYg" secondAttribute="leading" constant="10" id="Mqw-Sk-no0"/>
+                            <constraint firstItem="hL3-E1-wxA" firstAttribute="leading" secondItem="BGC-3b-081" secondAttribute="leading" id="go1-qS-OC6"/>
+                            <constraint firstItem="dkM-AD-9db" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kL9-lF-ZWC"/>
+                            <constraint firstItem="BGC-3b-081" firstAttribute="top" secondItem="sXC-c2-uYg" secondAttribute="bottom" constant="30" id="scO-sP-q09"/>
+                            <constraint firstAttribute="trailing" secondItem="sXC-c2-uYg" secondAttribute="trailing" id="v6J-A8-QHO"/>
+                            <constraint firstItem="sXC-c2-uYg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="165" id="yCw-VS-kkk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="feedbackLabel" destination="BGC-3b-081" id="2Qj-8x-Iyz"/>
+                        <outlet property="musicSourceSegmentedControl" destination="hL3-E1-wxA" id="jyM-9O-hzs"/>
+                        <outlet property="picker" destination="sXC-c2-uYg" id="2gY-Uy-Xdj"/>
+                        <outlet property="setAlarmButton" destination="dkM-AD-9db" id="m1p-eZ-cil"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="93.103448275862078"/>
         </scene>
     </scenes>
 </document>
