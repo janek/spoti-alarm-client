@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 
 struct Networker {
-    let raspberryWebAddress = "https://bibo.serveo.net"
-//    let raspberryWebAddress = "http://0.0.0.0:3141"
+//    let raspberryWebAddress = "https://bibo.serveo.net"
+    let raspberryWebAddress = "http://192.168.178.199:3141"
 
     func sendScheduleRequestToServer(minutes: String, hours: String, mode: MusicMode, completion: @escaping (String)->()){
         AF.request(raspberryWebAddress + "/cronsave",
