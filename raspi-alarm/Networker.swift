@@ -11,10 +11,13 @@ import Alamofire
 
 struct Networker {
 //    let raspberryWebAddress = "https://bibo.serveo.net"
-    let raspberryWebAddress = "http://192.168.178.199:3141"
+    static var shared = Networker()
 
-    func sendScheduleRequestToServer(minutes: String, hours: String, mode: MusicMode, completion: @escaping (String)->()){
-        AF.request(raspberryWebAddress + "/cronsave",
+
+
+    func sendScheduleRequestToServer(minutes: String, hours: String, mode: MusicMode, room: Room, completion: @escaping (String)->()){
+        let address = "http://192.168.178.\(room.rawValue):3141"
+        AF.request(address + "/cronsave",
                    method: .post,
                    parameters: ["minutes": minutes, "hours": hours, "mode": mode.rawValue.lowercased()],
                    encoding: JSONEncoding.default).response { response in
@@ -22,7 +25,7 @@ struct Networker {
                         completion("ERROR: \(error.localizedDescription)")
                     } else {
                         let textResponse = String(data: response.data!, encoding: .utf8)
-                        completion("\(response.result) while setting to \(hours):\(minutes)@\(mode.rawValue). Server response: \(textResponse ?? "<NONE>")")
+                        completion("\(response.result) while setting to \(hours):\(minutes)@\(mode.rawValue)-pi:\(room.rawValue). Server response: \(textResponse ?? "<NONE>")")
                     }
         }
     }
