@@ -109,5 +109,6 @@ iOSInjectionProject/
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+Pods/
 # End of https://www.gitignore.io/api/xcode,swift,cocoapods
 n
