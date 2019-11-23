@@ -44,7 +44,7 @@
 		3C805663FFD9433E95696044 /* Pods-raspi-alarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		6A75D169B1AC9ECEBB8CDCFA /* Pods-raspi-alarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		76D7F18AA4DFEDF1BA6EFCAF /* Pods_raspi_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raspi_alarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F2CE33521CF1DC8006BFF10 /* raspi-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "raspi-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2CE33521CF1DC8006BFF10 /* sonnenallee-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sonnenallee-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2CE33821CF1DC8006BFF10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2CE33A21CF1DC8006BFF10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F2CE33D21CF1DC8006BFF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		9F2CE33621CF1DC8006BFF10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F2CE33521CF1DC8006BFF10 /* raspi-alarm.app */,
+				9F2CE33521CF1DC8006BFF10 /* sonnenallee-alarm.app */,
 				9F2CE34921CF1DCB006BFF10 /* raspi-alarmTests.xctest */,
 				9F2CE35421CF1DCB006BFF10 /* raspi-alarmUITests.xctest */,
 			);
@@ -190,7 +190,7 @@
 			);
 			name = "raspi-alarm";
 			productName = "raspi-alarm";
-			productReference = 9F2CE33521CF1DC8006BFF10 /* raspi-alarm.app */;
+			productReference = 9F2CE33521CF1DC8006BFF10 /* sonnenallee-alarm.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9F2CE34821CF1DCB006BFF10 /* raspi-alarmTests */ = {
@@ -567,8 +567,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.janek.raspi-alarm";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.janek.sonnenallee-alarm";
+				PRODUCT_NAME = "sonnenallee-alarm";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -586,8 +586,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.janek.raspi-alarm";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.janek.sonnenallee-alarm";
+				PRODUCT_NAME = "sonnenallee-alarm";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

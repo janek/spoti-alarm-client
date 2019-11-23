@@ -14,8 +14,8 @@ enum MusicMode: String {
 }
 
 enum Room: String {
-    case Janek = "199"
-    case Mila = "113"
+    case Janek = "175"
+    case Mila = "148"
 }
 
 class ViewController: UIViewController {    
