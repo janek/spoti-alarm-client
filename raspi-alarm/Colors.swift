@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 enum Color {
-
     case spotifyGreen
     case luzOrange
 }

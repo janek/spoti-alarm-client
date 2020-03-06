@@ -79,7 +79,6 @@ class ViewController: UIViewController {
     @objc func roomValueChanged(segmentedControl: UISegmentedControl) {
         let chosenRoomString = segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex)!
 
-
         switch chosenRoomString {
         case "Janek":
             room = .Janek
