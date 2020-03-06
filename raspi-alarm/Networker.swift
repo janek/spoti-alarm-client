@@ -18,7 +18,7 @@ struct Networker {
             hours: String = "9",
             mode: MusicMode = .Spotify,
             room: Room = .Janek,
-            completion: @escaping (String)->()?
+            completion: @escaping (String)->()
     ) {
         let address = "http://192.168.178.\(room.rawValue):3141"
         AF.request(address + "/cronsave",

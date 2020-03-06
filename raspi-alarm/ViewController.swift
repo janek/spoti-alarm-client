@@ -41,7 +41,6 @@ class ViewController: UIViewController {
             print(response)
             self.feedbackLabel.text = response + "\n" + self.feedbackLabel.text!
             self.feedbackLabel.sizeToFit()
-
         })
     }
 
