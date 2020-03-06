@@ -8,16 +8,6 @@
 
 import UIKit
 
-enum MusicMode: String {
-    case Spotify = "Spotify"
-    case Luz = "Luz"
-}
-
-enum Room: String {
-    case Janek = "175"
-    case Mila = "148"
-}
-
 class ViewController: UIViewController {    
 
     @IBOutlet weak var picker: UIDatePicker!
@@ -90,3 +80,12 @@ class ViewController: UIViewController {
     }
 }
 
+enum MusicMode: String {
+    case Spotify = "Spotify"
+    case Luz = "Luz"
+}
+
+enum Room: String {
+    case Janek = "175"
+    case Mila = "148"
+}

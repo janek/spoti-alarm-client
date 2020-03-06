@@ -120,8 +120,7 @@
 			children = (
 				9F2CE33821CF1DC8006BFF10 /* AppDelegate.swift */,
 				9F2CE33A21CF1DC8006BFF10 /* ViewController.swift */,
-				9F712B8921E19D3800A68D81 /* Colors.swift */,
-				9F2CE36D21CF9DF7006BFF10 /* Networker.swift */,
+				9FA7408A2412F5D5008EE222 /* Sources */,
 				9F2CE33C21CF1DC8006BFF10 /* Main.storyboard */,
 				9F2CE33F21CF1DCB006BFF10 /* Assets.xcassets */,
 				9F2CE34121CF1DCB006BFF10 /* LaunchScreen.storyboard */,
@@ -146,6 +145,15 @@
 				9F2CE35A21CF1DCB006BFF10 /* Info.plist */,
 			);
 			path = "raspi-alarmUITests";
+			sourceTree = "<group>";
+		};
+		9FA7408A2412F5D5008EE222 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9F712B8921E19D3800A68D81 /* Colors.swift */,
+				9F2CE36D21CF9DF7006BFF10 /* Networker.swift */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 		D004A673792AF996C2149C53 /* Pods */ = {
