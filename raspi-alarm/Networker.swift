@@ -13,9 +13,13 @@ struct Networker {
 //    let raspberryWebAddress = "https://bibo.serveo.net"
     static var shared = Networker()
 
-
-
-    func sendScheduleRequestToServer(minutes: String, hours: String, mode: MusicMode, room: Room, completion: @escaping (String)->()){
+    func sendScheduleRequestToServer (
+            minutes: String = "30",
+            hours: String = "9",
+            mode: MusicMode = .Spotify,
+            room: Room = .Janek,
+            completion: @escaping (String)->()?
+    ) {
         let address = "http://192.168.178.\(room.rawValue):3141"
         AF.request(address + "/cronsave",
                    method: .post,
