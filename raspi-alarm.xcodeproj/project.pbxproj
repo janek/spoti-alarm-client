@@ -10,13 +10,13 @@
 		3A0640ABEAACB0E8781EBDC4 /* Pods_raspi_alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0282A98CAD674BB2D5FE940A /* Pods_raspi_alarm.framework */; };
 		9F2CE33921CF1DC8006BFF10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE33821CF1DC8006BFF10 /* AppDelegate.swift */; };
 		9F2CE33B21CF1DC8006BFF10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE33A21CF1DC8006BFF10 /* ViewController.swift */; };
-		9F2CE33E21CF1DC8006BFF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CE33C21CF1DC8006BFF10 /* Main.storyboard */; };
 		9F2CE34021CF1DCB006BFF10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CE33F21CF1DCB006BFF10 /* Assets.xcassets */; };
 		9F2CE34321CF1DCB006BFF10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2CE34121CF1DCB006BFF10 /* LaunchScreen.storyboard */; };
 		9F2CE34E21CF1DCB006BFF10 /* raspi_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE34D21CF1DCB006BFF10 /* raspi_alarmTests.swift */; };
 		9F2CE35921CF1DCB006BFF10 /* raspi_alarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE35821CF1DCB006BFF10 /* raspi_alarmUITests.swift */; };
 		9F2CE36E21CF9DF7006BFF10 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CE36D21CF9DF7006BFF10 /* Networker.swift */; };
 		9F712B8A21E19D3800A68D81 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F712B8921E19D3800A68D81 /* Colors.swift */; };
+		9FA7408C2412FF18008EE222 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7408B2412FF18008EE222 /* main.swift */; };
 		E134CAE2B6A5D572FD40D27A /* Pods_raspi_alarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D7F18AA4DFEDF1BA6EFCAF /* Pods_raspi_alarmTests.framework */; };
 		F6B1F05725AD432530538DE3 /* Pods_raspi_alarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F65F5ACBAAF917E5D457511 /* Pods_raspi_alarmUITests.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,6 @@
 		9F2CE33521CF1DC8006BFF10 /* sonnenallee-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sonnenallee-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2CE33821CF1DC8006BFF10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2CE33A21CF1DC8006BFF10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9F2CE33D21CF1DC8006BFF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F2CE33F21CF1DCB006BFF10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2CE34221CF1DCB006BFF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F2CE34421CF1DCB006BFF10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		9F2CE35A21CF1DCB006BFF10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F2CE36D21CF9DF7006BFF10 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		9F712B8921E19D3800A68D81 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9FA7408B2412FF18008EE222 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BB164B01C7CA2DE955E096D9 /* Pods-raspi-alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm.debug.xcconfig"; sourceTree = "<group>"; };
 		CF59463F9045EBAA68453390 /* Pods-raspi-alarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EEEAF7193C047938560BAB52 /* Pods-raspi-alarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raspi-alarmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,9 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				9F2CE33821CF1DC8006BFF10 /* AppDelegate.swift */,
+				9FA7408B2412FF18008EE222 /* main.swift */,
 				9F2CE33A21CF1DC8006BFF10 /* ViewController.swift */,
 				9FA7408A2412F5D5008EE222 /* Sources */,
-				9F2CE33C21CF1DC8006BFF10 /* Main.storyboard */,
 				9F2CE33F21CF1DCB006BFF10 /* Assets.xcassets */,
 				9F2CE34121CF1DCB006BFF10 /* LaunchScreen.storyboard */,
 				9F2CE34421CF1DCB006BFF10 /* Info.plist */,
@@ -289,7 +289,6 @@
 			files = (
 				9F2CE34321CF1DCB006BFF10 /* LaunchScreen.storyboard in Resources */,
 				9F2CE34021CF1DCB006BFF10 /* Assets.xcassets in Resources */,
-				9F2CE33E21CF1DC8006BFF10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2CE33B21CF1DC8006BFF10 /* ViewController.swift in Sources */,
+				9FA7408C2412FF18008EE222 /* main.swift in Sources */,
 				9F712B8A21E19D3800A68D81 /* Colors.swift in Sources */,
 				9F2CE33921CF1DC8006BFF10 /* AppDelegate.swift in Sources */,
 				9F2CE36E21CF9DF7006BFF10 /* Networker.swift in Sources */,
@@ -428,14 +428,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9F2CE33C21CF1DC8006BFF10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F2CE33D21CF1DC8006BFF10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F2CE34121CF1DCB006BFF10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
