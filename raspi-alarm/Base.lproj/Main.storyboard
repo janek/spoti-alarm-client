@@ -16,55 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hL3-E1-wxA">
-                                <rect key="frame" x="230" y="579" width="117" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Spotify"/>
-                                    <segment title="Luz"/>
-                                </segments>
-                                <color key="tintColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-dD-PV1">
-                                <rect key="frame" x="230" y="616" width="117" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Janek"/>
-                                    <segment title="David"/>
-                                </segments>
-                                <color key="tintColor" red="0.44213336710000001" green="0.75448673960000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </segmentedControl>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="10" translatesAutoresizingMaskIntoConstraints="NO" id="sXC-c2-uYg">
-                                <rect key="frame" x="27" y="345" width="320" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="0.663292781527272" blue="0.40139118048171629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <locale key="locale" localeIdentifier="pl"/>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGC-3b-081">
-                                <rect key="frame" x="33" y="25" width="309" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <color key="textColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkM-AD-9db">
-                                <rect key="frame" x="277" y="256" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="SET">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="setAlarmClock" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7s-GA-F6K"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="buV-Ch-Je1">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="buV-Ch-Je1">
                                 <rect key="frame" x="89" y="287" width="180" height="39"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-gT-d2u">
@@ -82,9 +34,6 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="setAlarmClock" destination="BYZ-38-t0r" eventType="touchUpInside" id="kza-bc-5oV"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkL-iS-4nP">
                                         <rect key="frame" x="47" y="0.0" width="39" height="39"/>
@@ -101,9 +50,6 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="setAlarmClock" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUR-la-G9g"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3t-1H-6mH">
                                         <rect key="frame" x="94" y="0.0" width="39" height="39"/>
@@ -120,9 +66,6 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="setAlarmClock" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNm-3x-KEr"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFk-2U-bSX">
                                         <rect key="frame" x="141" y="0.0" width="39" height="39"/>
@@ -139,14 +82,80 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="setAlarmClock" destination="BYZ-38-t0r" eventType="touchUpInside" id="VyG-Ja-r5Y"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="10" translatesAutoresizingMaskIntoConstraints="NO" id="sXC-c2-uYg">
+                                <rect key="frame" x="27.5" y="345" width="320" height="216"/>
+                                <color key="backgroundColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.663292781527272" blue="0.40139118048171629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <locale key="locale" localeIdentifier="pl"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkM-AD-9db">
+                                <rect key="frame" x="277" y="256" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dkM-AD-9db" secondAttribute="height" multiplier="1:1" id="9ZU-2a-pHl"/>
+                                </constraints>
+                                <state key="normal" title="SET">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="setAlarmClock" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7s-GA-F6K"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c1A-tc-nUU" userLabel="Segmented Controls Stack">
+                                <rect key="frame" x="232" y="577" width="127" height="70"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hL3-E1-wxA">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="32"/>
+                                        <segments>
+                                            <segment title="Spotify"/>
+                                            <segment title="Luz"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-dD-PV1">
+                                        <rect key="frame" x="0.0" y="39" width="127" height="32"/>
+                                        <segments>
+                                            <segment title="Janek"/>
+                                            <segment title="David"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.44213336710000001" green="0.75448673960000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGC-3b-081">
+                                <rect key="frame" x="33" y="25" width="309" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="PoS-ZJ-Zh8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sXC-c2-uYg" firstAttribute="top" secondItem="buV-Ch-Je1" secondAttribute="bottom" constant="19" id="1Nk-LH-AGg"/>
+                            <constraint firstItem="buV-Ch-Je1" firstAttribute="bottom" secondItem="dkM-AD-9db" secondAttribute="bottom" id="3gd-EI-fnB"/>
+                            <constraint firstItem="BGC-3b-081" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="7ms-Aa-w4E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dkM-AD-9db" secondAttribute="trailing" constant="28" id="ACL-St-o7w"/>
+                            <constraint firstItem="BGC-3b-081" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="EwA-u0-JWw"/>
+                            <constraint firstItem="c1A-tc-nUU" firstAttribute="top" secondItem="sXC-c2-uYg" secondAttribute="bottom" constant="16" id="Uw4-g1-pFD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c1A-tc-nUU" secondAttribute="bottom" constant="20" id="hlh-GS-8gu"/>
+                            <constraint firstItem="sXC-c2-uYg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="klX-mM-abh"/>
+                            <constraint firstItem="buV-Ch-Je1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="pd4-uB-Kl7"/>
+                            <constraint firstItem="dkM-AD-9db" firstAttribute="leading" secondItem="buV-Ch-Je1" secondAttribute="trailing" constant="8" symbolic="YES" id="sWx-xW-qg7"/>
+                            <constraint firstItem="buV-Ch-Je1" firstAttribute="baseline" secondItem="dkM-AD-9db" secondAttribute="firstBaseline" constant="16" symbolType="layoutAnchor" id="xBo-Ez-SRR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BGC-3b-081" secondAttribute="trailing" constant="33" id="z63-uI-j9a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c1A-tc-nUU" secondAttribute="trailing" constant="16" id="zzz-sz-40P"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -154,7 +163,11 @@
                         <outlet property="musicSourceSegmentedControl" destination="hL3-E1-wxA" id="jyM-9O-hzs"/>
                         <outlet property="picker" destination="sXC-c2-uYg" id="2gY-Uy-Xdj"/>
                         <outlet property="roomSegmentedControl" destination="lyI-dD-PV1" id="Z3S-Ad-xbp"/>
-                        <outlet property="setAlarmButton" destination="dkM-AD-9db" id="m1p-eZ-cil"/>
+                        <outletCollection property="serverRequestButtons" destination="xcP-gT-d2u" collectionClass="NSMutableArray" id="9lJ-1b-rz8"/>
+                        <outletCollection property="serverRequestButtons" destination="MkL-iS-4nP" collectionClass="NSMutableArray" id="Fvj-me-yF3"/>
+                        <outletCollection property="serverRequestButtons" destination="A3t-1H-6mH" collectionClass="NSMutableArray" id="jVA-WA-bi9"/>
+                        <outletCollection property="serverRequestButtons" destination="hFk-2U-bSX" collectionClass="NSMutableArray" id="e4r-FK-w3j"/>
+                        <outletCollection property="serverRequestButtons" destination="dkM-AD-9db" collectionClass="NSMutableArray" id="AR1-Mm-9Qj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

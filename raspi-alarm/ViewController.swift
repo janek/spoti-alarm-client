@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var picker: UIDatePicker!
     @IBOutlet weak var feedbackLabel: UILabel!
-    @IBOutlet weak var setAlarmButton: UIButton!
+    @IBOutlet var serverRequestButtons: [UIButton]!
     @IBOutlet weak var musicSourceSegmentedControl: UISegmentedControl!
     @IBOutlet weak var roomSegmentedControl: UISegmentedControl!
 
@@ -51,13 +51,13 @@ class ViewController: UIViewController {
         case MusicMode.Spotify.rawValue:
             picker.setValue(Color.spotifyGreen.value, forKeyPath: "textColor")
             segmentedControl.tintColor = Color.spotifyGreen.value
-            setAlarmButton.backgroundColor = Color.spotifyGreen.value
+            serverRequestButtons.map({$0.backgroundColor = Color.spotifyGreen.value})
             feedbackLabel.textColor = Color.spotifyGreen.value
             mode = .Spotify
         case MusicMode.Luz.rawValue:
             picker.setValue(Color.luzOrange.value, forKeyPath: "textColor")
             segmentedControl.tintColor = Color.luzOrange.value
-            setAlarmButton.backgroundColor = Color.luzOrange.value
+            serverRequestButtons.map({$0.backgroundColor = Color.luzOrange.value})
             feedbackLabel.textColor = Color.luzOrange.value
             mode = .Luz
         default:
