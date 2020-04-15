@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="buV-Ch-Je1">
-                                <rect key="frame" x="89" y="287" width="180" height="39"/>
+                                <rect key="frame" x="89" y="326" width="180" height="39"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-gT-d2u">
                                         <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
@@ -34,6 +34,9 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="triggerServerRequestFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfn-gu-pU0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkL-iS-4nP">
                                         <rect key="frame" x="47" y="0.0" width="39" height="39"/>
@@ -50,6 +53,9 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="triggerServerRequestFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsV-jI-lGz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3t-1H-6mH">
                                         <rect key="frame" x="94" y="0.0" width="39" height="39"/>
@@ -58,7 +64,7 @@
                                             <constraint firstAttribute="width" secondItem="A3t-1H-6mH" secondAttribute="height" multiplier="1:1" id="2Vr-hL-Eqe"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title="PAUSE">
+                                        <state key="normal" title="IP">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -66,6 +72,9 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="triggerServerRequestFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdJ-9d-fbg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFk-2U-bSX">
                                         <rect key="frame" x="141" y="0.0" width="39" height="39"/>
@@ -82,17 +91,20 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="triggerServerRequestFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mz0-Ue-YnU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="10" translatesAutoresizingMaskIntoConstraints="NO" id="sXC-c2-uYg">
-                                <rect key="frame" x="27.5" y="345" width="320" height="216"/>
+                                <rect key="frame" x="27.5" y="384" width="320" height="216"/>
                                 <color key="backgroundColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="0.663292781527272" blue="0.40139118048171629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <locale key="locale" localeIdentifier="pl"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkM-AD-9db">
-                                <rect key="frame" x="277" y="256" width="70" height="70"/>
+                                <rect key="frame" x="277" y="295" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dkM-AD-9db" secondAttribute="height" multiplier="1:1" id="9ZU-2a-pHl"/>
@@ -106,11 +118,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="setAlarmClock" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7s-GA-F6K"/>
+                                    <action selector="triggerServerRequestFromButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MsU-Hh-jHy"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c1A-tc-nUU" userLabel="Segmented Controls Stack">
-                                <rect key="frame" x="232" y="577" width="127" height="70"/>
+                                <rect key="frame" x="232" y="616" width="127" height="31"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hL3-E1-wxA">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="32"/>
@@ -119,14 +131,6 @@
                                             <segment title="Luz"/>
                                         </segments>
                                         <color key="tintColor" red="0.44213336706161499" green="0.75448673963546753" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </segmentedControl>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-dD-PV1">
-                                        <rect key="frame" x="0.0" y="39" width="127" height="32"/>
-                                        <segments>
-                                            <segment title="Janek"/>
-                                            <segment title="David"/>
-                                        </segments>
-                                        <color key="tintColor" red="0.44213336710000001" green="0.75448673960000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
@@ -140,7 +144,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sXC-c2-uYg" firstAttribute="top" secondItem="buV-Ch-Je1" secondAttribute="bottom" constant="19" id="1Nk-LH-AGg"/>
                             <constraint firstItem="buV-Ch-Je1" firstAttribute="bottom" secondItem="dkM-AD-9db" secondAttribute="bottom" id="3gd-EI-fnB"/>
@@ -162,7 +166,6 @@
                         <outlet property="feedbackLabel" destination="BGC-3b-081" id="2Qj-8x-Iyz"/>
                         <outlet property="musicSourceSegmentedControl" destination="hL3-E1-wxA" id="jyM-9O-hzs"/>
                         <outlet property="picker" destination="sXC-c2-uYg" id="2gY-Uy-Xdj"/>
-                        <outlet property="roomSegmentedControl" destination="lyI-dD-PV1" id="Z3S-Ad-xbp"/>
                         <outletCollection property="serverRequestButtons" destination="xcP-gT-d2u" collectionClass="NSMutableArray" id="9lJ-1b-rz8"/>
                         <outletCollection property="serverRequestButtons" destination="MkL-iS-4nP" collectionClass="NSMutableArray" id="Fvj-me-yF3"/>
                         <outletCollection property="serverRequestButtons" destination="A3t-1H-6mH" collectionClass="NSMutableArray" id="jVA-WA-bi9"/>

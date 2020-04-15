@@ -3,409 +3,439 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0284401AD2BEE1FFA91BD2BC4E78D375 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD339498A455B8B12D257807027C542 /* Response.swift */; };
-		03FC4A2F89ED315E272D017AB6BC1295 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AFE7AB890DAFBEEAB470309EBBA99 /* MultipartUpload.swift */; };
-		12C01A8967E7D3C125DD7F2A3EE577AB /* SessionStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBFE8706839183086EA1FA62C7D27F /* SessionStateProvider.swift */; };
-		1406ACFDC58DE31B1DDC7D45F5D7769C /* Pods-raspi-alarmUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2428841E431D06CE85EB9EFC39D4CC3 /* Pods-raspi-alarmUITests-dummy.m */; };
-		1CEB4B9576E128A08CBDC0FF2F2BFF16 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82F850716346F95F4E63A5EB954F426 /* AFError.swift */; };
-		1ED88D6376FE180B204286D0EE77AF83 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22DAFBDB9A80D4BC34DE264274F8F7 /* ParameterEncoder.swift */; };
-		1FF43122AA3F36310AC5B00775DB90D3 /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887FEAE78FF58B3F1B03529507B0D79E /* RequestAdapter.swift */; };
-		24903B8E4925AE7FAB3C9992121661BC /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301F9B721F62AE6E9D332FEE303EAA76 /* ParameterEncoding.swift */; };
-		27963FB04CE2FC16943DAD1BAC2308E3 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793ADE198C44D75D86E7D5479E9B7E /* HTTPHeaders.swift */; };
-		28456FFE868335A61E28C0AA77F5DA67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC365FEF314CAE9760892B813E187E /* Foundation.framework */; };
-		2D175C7FC4573B5A233059D50A8CC832 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07A14F5EC7E5009225D80B41CC7D8B /* MultipartFormData.swift */; };
-		2F55D6B84C8A7AB2225F4D1274AE89F1 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997D1D0BCF26F8C9831B6C452B7C437 /* ResponseSerialization.swift */; };
-		3EBF94B8AB4DEE88320152AA4E68D4FB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6757C44D1A8B62FD3A7062E345EA7F6 /* CFNetwork.framework */; };
-		45056B0F614102C5195D3A9C43B25F4D /* Pods-raspi-alarmUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37BF6628813D8E20289455824DAE1F7F /* Pods-raspi-alarmUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		469013458A705F77539DEE373173B75B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEA6701D77813197AE9B71D737EA78 /* Result.swift */; };
-		4D635A3AE5EE1BC067D5C7EF4021A7C0 /* Pods-raspi-alarmTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 931707AE6E716E47E8CED6B5A69EAB8B /* Pods-raspi-alarmTests-dummy.m */; };
-		5B9AE586E201EBD6E622E45837FC95AB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EEAE85881E78725942FBC013577632 /* Request.swift */; };
-		5E906A431B11C9AF47928B1B7F6F7B3B /* Protector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C4E8AC090B9BDE99CEE908241AC7B /* Protector.swift */; };
-		667D0E550469DD3A0DEDC3ECE44065C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC365FEF314CAE9760892B813E187E /* Foundation.framework */; };
-		66F668DB539B370C1EE3C5ED683B7007 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DC5771FD12FAE67FE67A452759B55 /* Notifications.swift */; };
-		6C04321950B4319D173C6D0BEDD82DD1 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D5747BE9D5FA6D29264CB65B45F5F /* OperationQueue+Alamofire.swift */; };
-		7267B06EB5A13BF18F455C277A9D88A2 /* Pods-raspi-alarmTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9FEE902BA2562676C054936FBA1322 /* Pods-raspi-alarmTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98A2FDAC6DF550FC90D7494ABCEF9A91 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE55764E33804E65BFB46C19EE6BAD7 /* RequestTaskMap.swift */; };
-		A5AF953B7F4A8AE6C0E3B343A794D2E7 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BCB0E6580DEC60FC013818A0E1271A /* URLSessionConfiguration+Alamofire.swift */; };
-		ACDA734F2C9C31BEBD2934ACEE220954 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC365FEF314CAE9760892B813E187E /* Foundation.framework */; };
-		BDEBD2CAED6F09F5D698940A05F5BA4D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F9327834905EDFD3487B0DDA25971F /* Alamofire.swift */; };
-		C52C99008B051B8AC4B417859B0F7C35 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA0D14512F9227C2FB6A6E2B8748AA /* NetworkReachabilityManager.swift */; };
-		CC7E18B39BCB654907114A8E89C9A6D6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FACF72D296C846658A43715CA642FB1 /* HTTPMethod.swift */; };
-		D363697ECBED1DF98A5E1428E95AA63B /* Pods-raspi-alarm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF1D94FE002D1A823995847EE5F21CA /* Pods-raspi-alarm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D54B134B273849579F0BBAC6AA82E623 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE009DB6A5CE13533CAD9B642CEB79D /* EventMonitor.swift */; };
-		D686D3B34D77085248333133F2C689A8 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D595D6BD14BBA8A654159F7F8A8103D /* Alamofire-dummy.m */; };
-		D7CFD7F95293857ED0EA4624A88573AD /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB577B56C1DDCFEA9AF5AB9DDF722D56 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8D4AEC4AA3AFA6CB9700486515AB17C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A0FFF9245D7D6659687C4DC11AD61 /* Session.swift */; };
-		DFAE1412B5D887B5869FF874D600B1FF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796AF79E3B2EEE5F2996E57D2EEB344 /* Validation.swift */; };
-		E28B7614D89DF25451537E8EE5BAB4BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DC365FEF314CAE9760892B813E187E /* Foundation.framework */; };
-		E7D6AC86AB442241775988EDD8FF33EB /* Pods-raspi-alarm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06ADBA9D5621D3C7894832A38FC329B4 /* Pods-raspi-alarm-dummy.m */; };
-		F168C957287E4B72AF35413363644EF3 /* RequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE330FE18EF53A1C94A0C03A30DF7A /* RequestRetrier.swift */; };
-		F76D583E10917C15064DA6317E8AFE55 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860C5BCF783D9DA203DB806225D04B5 /* ServerTrustEvaluation.swift */; };
-		F797F3BAB0E9CC386F9CAFF72CE472F8 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729155AC33DF723C67ECE65CF6E28BF5 /* URLConvertible+URLRequestConvertible.swift */; };
-		F87C8BEDAC8E6241EA2A50D693120D40 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE85DE51B090878250F0B38515945BF /* DispatchQueue+Alamofire.swift */; };
+		003B9FC9E937C82635CF68E9E3576B52 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D05381599A6880CC1298783F9DDC29 /* URLRequest+Alamofire.swift */; };
+		06E5882CFE15F902D04808EC4C10DAC2 /* Pods-raspi-alarmUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0DFE8B7DED2D3BA6954394FE751E4E /* Pods-raspi-alarmUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08281777D479CF46F0E0F24753E01A63 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14ED4FB5BCACE2A2214738432CED388 /* Request.swift */; };
+		09DF23C58E6B085520B8378124FA4F08 /* Pods-raspi-alarmTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1F003C2D016165040FC9824891FEA /* Pods-raspi-alarmTests-dummy.m */; };
+		0FF6A3BBA9E9DAAE2E741513546FC4B6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363705AC3CDF0F0E86D345E1EC6189E /* Validation.swift */; };
+		165F498AB8762893E957BCE0D70F4439 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E6C2DBFD1B5D48C1EF9FD442853F8 /* AFError.swift */; };
+		177AC5D54DACB4485B8906931AADC0D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		19EE6C29DB4104C33356362788ABB107 /* Pods-raspi-alarmTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C86231380348327DB0434202BFA67C /* Pods-raspi-alarmTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE8BDA6C86345FD31F42F3AECB375EA /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9859F36FF9276E6CDFCFC1260E6A4 /* NetworkReachabilityManager.swift */; };
+		2933B39BFCEF204A508F4FFF3188AD27 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8129C6DCEFA13A27E9235F46810B4 /* URLSessionConfiguration+Alamofire.swift */; };
+		2BC73DE30871EA6F7D9F600D50F11726 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF587C039C07312E498A18A5A87BA17 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE0DE689754A1603251EB331450718E /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3FBEBA71A072E962E5D0DECCC4AB3 /* ParameterEncoder.swift */; };
+		37A2FCD24ED22C8D670188930CE4CA5D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58B0786E719BE6EFBC74865A2A404E /* RequestTaskMap.swift */; };
+		408258CCC9DF9A5BD371EBEC8286CD81 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC047B335E18A397650D6F192938D166 /* RetryPolicy.swift */; };
+		433815428539A3F818A385B0EFEFB8DC /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807F6271F866030763575D0EDD33C09 /* DispatchQueue+Alamofire.swift */; };
+		4AAB3F2054BD0939C95D961A3BAA43B4 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBDB055DA55FE762B847D96EE7F5E5E /* ParameterEncoding.swift */; };
+		4F767680534EDD5E80E526C3D76989B2 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AFCA52F5DD771FB857900D3171BBA1 /* Alamofire-dummy.m */; };
+		543FF1D8EE33F8C1136EB945CDF2A3E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
+		57B60987700B37698F1C9996AF526AD5 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD040C443F181B77B018880BB3DA99E /* ServerTrustEvaluation.swift */; };
+		60D4B28D45B4164E21715CF68D1E239B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671678A75B7A54F3ECA445A504C7FA3 /* Notifications.swift */; };
+		6C8EC166C81EB4E72450A002224658DC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179C39101224420AC87FA631DE04AA3B /* HTTPMethod.swift */; };
+		80DBE8FF4DFE41CB54687CAB6A29F1B3 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0EB9427CCB141CD47A9427FDE6E90F /* StringEncoding+Alamofire.swift */; };
+		85E10F2E2F0044C1ACE78F76395F9077 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B696961AA379F0E3088F79A84558B4 /* HTTPHeaders.swift */; };
+		899C2A58788D28AB6FAD5366BA58AC25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		918548CAAC87215B4960B1F4D2A71769 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B373D86A4EE82B80DFDB72866A0134B /* MultipartUpload.swift */; };
+		964030107A87D7C1B25628B02C0E563F /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C248C5C7F03D637E9A79170BB17D58C /* SessionDelegate.swift */; };
+		994F5C2FE6FDC139E0C41DC9E5D6C975 /* Pods-raspi-alarm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A51005E25B1D1C1896C21E4A4ADFFF5 /* Pods-raspi-alarm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C58D6B6D3DD53A73CF3BB86D535AE53 /* Pods-raspi-alarm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0922C1C0E70C42832AC411B9398AB046 /* Pods-raspi-alarm-dummy.m */; };
+		9DC4A6FCE96D312A9EE0E5D51B4D4A80 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB1ACC6A0F5A951F9B3D6DCE18D5D82 /* URLEncodedFormEncoder.swift */; };
+		AA8023C0CFE561DB8B8D92232C6125B1 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1133B3D08E74CF04B352D2CBFF9D44B0 /* AlamofireExtended.swift */; };
+		AAE822224E085A6362FA7122C0605078 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9733501872D78FAE0C671B11CB6A63 /* RedirectHandler.swift */; };
+		B2047F988C61D368E76A806D5227329E /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB41FE1EEF1E68207FE13D1F699068F /* ResponseSerialization.swift */; };
+		CB436452F5C36FC049E26A8C0475965C /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5B1DF2317D88FFD85A28DDD8451214 /* Result+Alamofire.swift */; };
+		CDCDB8A355FE70F12855CC8A3657E739 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABAA677AEC5D9D955A327C156C1EE4 /* URLConvertible+URLRequestConvertible.swift */; };
+		D0F6D13D0DC583351F5F6BCA1CB04ABD /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A2651E0008CDE54CEF8569DCB5255 /* Protected.swift */; };
+		DA07C0CDF1B0FBC959A4406DE142A081 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603E2764B33114B78A46CAF4DB1A09D /* EventMonitor.swift */; };
+		DA6512AAAFD92EFA9860ED84C3A308B9 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B8657E3DC729B94E8452FB6FE4E3EE /* Alamofire.swift */; };
+		DDA3EF3B4A1D99E1E4AB016CFC1B544D /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E65BBF1B9CCB550475C686CB87E26 /* RequestInterceptor.swift */; };
+		DF22F9B2C3640931D82769C9E4707929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		E4E727DD13DA225D574D9880D9CB7348 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570ABD473BAED1FB0B2D88A7AFFB878A /* CachedResponseHandler.swift */; };
+		E618A89E126F408A59FE3167A6CBB510 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83290665532F894C77933E503FE2591A /* OperationQueue+Alamofire.swift */; };
+		E9D53BB1FA673CEABAFB2641D9692FD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		ED696CF159BF1B6BCABD0B445A4DAB7B /* Pods-raspi-alarmUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 983EAD8FCD94B832C16B1E2109F2F505 /* Pods-raspi-alarmUITests-dummy.m */; };
+		EE1F347816E69DB6AB8513488D9D08FF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EBA8D0B449D59C3B6CD2100C794315 /* Session.swift */; };
+		EE5FCC4133C3E712B85676510F2A3D7B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4D0B6B152E7D9715979089F2B65A7 /* Response.swift */; };
+		F5E436F5E8C598430FABC8787E517F96 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881F5D8EC889A280E41C9B1CE779D1B /* MultipartFormData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		452837D5906ACE1CE35AA6E229E35370 /* PBXContainerItemProxy */ = {
+		2296AD26567F2CFE58410DDE33F68FB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1BCC60C427FDB86B5B7A530D3161AA82;
-			remoteInfo = "Pods-raspi-alarm";
-		};
-		50797E74F0930018B42EFA34CE35C5ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D114E0DD9FAF4C2E30A6306268FD1F67;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		78EC1138E101D2738CC5C7D46878D1DE /* PBXContainerItemProxy */ = {
+		38EA98091FC6A04D4A2846C1F81FEE89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1BCC60C427FDB86B5B7A530D3161AA82;
+			remoteGlobalIDString = FFF54D6FACF0A095BFCB68D3E894FB49;
+			remoteInfo = "Pods-raspi-alarm";
+		};
+		C02EA20FB09147249F802524A6295722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF54D6FACF0A095BFCB68D3E894FB49;
 			remoteInfo = "Pods-raspi-alarm";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00BCB0E6580DEC60FC013818A0E1271A /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		06ADBA9D5621D3C7894832A38FC329B4 /* Pods-raspi-alarm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-raspi-alarm-dummy.m"; sourceTree = "<group>"; };
-		0826A370D88B474F63BA72F1C914B90D /* Pods-raspi-alarmTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-raspi-alarmTests.modulemap"; sourceTree = "<group>"; };
-		0CA2D23CDF15645189DD5D05B91DE13A /* Pods-raspi-alarmTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-raspi-alarmTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0E448EB13D6159AEAA42D2B4B42D3121 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		120E5CF81C563D35A65ABF550BEA6FEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		123E5201299C927FB6ADB40590DCBC08 /* Pods-raspi-alarm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-raspi-alarm-acknowledgements.markdown"; sourceTree = "<group>"; };
-		123FFACE61871E3106B9CE9DB73A59E1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		129E995E8ACED4C038FC2632B170D70A /* Pods_raspi_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raspi_alarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12F5A022125FC809E277F603FFF4C8CE /* Pods-raspi-alarmUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-raspi-alarmUITests-resources.sh"; sourceTree = "<group>"; };
-		1FEBFE8706839183086EA1FA62C7D27F /* SessionStateProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionStateProvider.swift; path = Source/SessionStateProvider.swift; sourceTree = "<group>"; };
-		215334D37E8260047EB2CFBE7A282B0B /* Pods-raspi-alarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		275BC98B1155D8E7B65973F029DCC7A0 /* Pods-raspi-alarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarmTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2B793ADE198C44D75D86E7D5479E9B7E /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
-		301F9B721F62AE6E9D332FEE303EAA76 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		35AE521EABEA4666775A30F4EF58893C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37BF6628813D8E20289455824DAE1F7F /* Pods-raspi-alarmUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-raspi-alarmUITests-umbrella.h"; sourceTree = "<group>"; };
-		3860C5BCF783D9DA203DB806225D04B5 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		3D595D6BD14BBA8A654159F7F8A8103D /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		457D5747BE9D5FA6D29264CB65B45F5F /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		467BB3A73CE6AC06C83130E0AB122B8E /* Pods_raspi_alarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raspi_alarmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B07A14F5EC7E5009225D80B41CC7D8B /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		4CE85DE51B090878250F0B38515945BF /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		5997D1D0BCF26F8C9831B6C452B7C437 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		5A04C7644B25A7E8710D470C4B65BB16 /* Pods_raspi_alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raspi_alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B9FEE902BA2562676C054936FBA1322 /* Pods-raspi-alarmTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-raspi-alarmTests-umbrella.h"; sourceTree = "<group>"; };
-		5CA1A9CD6FF76987003FEE87314A75E5 /* Pods-raspi-alarmUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-raspi-alarmUITests.modulemap"; sourceTree = "<group>"; };
-		6B0AFE7AB890DAFBEEAB470309EBBA99 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
-		6FACF72D296C846658A43715CA642FB1 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
-		7085AE2F496D828AB35CE9C2475D9524 /* Pods-raspi-alarmTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-raspi-alarmTests-resources.sh"; sourceTree = "<group>"; };
-		71E032BB3BBC52D753DCF76CEBF1F050 /* Pods-raspi-alarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarmUITests.release.xcconfig"; sourceTree = "<group>"; };
-		729155AC33DF723C67ECE65CF6E28BF5 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		72F9327834905EDFD3487B0DDA25971F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		73FF83BAE1A988FF6E71CBD18F808832 /* Pods-raspi-alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarm.release.xcconfig"; sourceTree = "<group>"; };
-		7D91A2D3D1D8F642D52446E619568118 /* Pods-raspi-alarmUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-raspi-alarmUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		837B85FCBE0E4E82049022BD45FD3EBD /* Pods-raspi-alarm-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-raspi-alarm-resources.sh"; sourceTree = "<group>"; };
-		86EA0D14512F9227C2FB6A6E2B8748AA /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		8796AF79E3B2EEE5F2996E57D2EEB344 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		887FEAE78FF58B3F1B03529507B0D79E /* RequestAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestAdapter.swift; path = Source/RequestAdapter.swift; sourceTree = "<group>"; };
-		89DC365FEF314CAE9760892B813E187E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8F0DC5771FD12FAE67FE67A452759B55 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		931707AE6E716E47E8CED6B5A69EAB8B /* Pods-raspi-alarmTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-raspi-alarmTests-dummy.m"; sourceTree = "<group>"; };
-		9389CF1201345EB5A41E2E426602D6A8 /* Pods-raspi-alarm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-raspi-alarm-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9AD339498A455B8B12D257807027C542 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		9AE55764E33804E65BFB46C19EE6BAD7 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
-		9D6C4E8AC090B9BDE99CEE908241AC7B /* Protector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protector.swift; path = Source/Protector.swift; sourceTree = "<group>"; };
-		9FEF9B588F78F910D5FDE4834892F5E9 /* Pods-raspi-alarmUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarmUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A82F850716346F95F4E63A5EB954F426 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		A970D1F99B4458E7BFFA157B5ACBFE81 /* Pods-raspi-alarmUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-raspi-alarmUITests-frameworks.sh"; sourceTree = "<group>"; };
-		B2428841E431D06CE85EB9EFC39D4CC3 /* Pods-raspi-alarmUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-raspi-alarmUITests-dummy.m"; sourceTree = "<group>"; };
-		B6E01E8D1CE4137417F244B5327F0AD8 /* Pods-raspi-alarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarmTests.release.xcconfig"; sourceTree = "<group>"; };
-		BC0A0FFF9245D7D6659687C4DC11AD61 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
-		C29704322F8B6F024AC9618C817FE4A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6757C44D1A8B62FD3A7062E345EA7F6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		C7FB42D63344273D50E44EBB5F0A75ED /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		CAE009DB6A5CE13533CAD9B642CEB79D /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
-		CCAE330FE18EF53A1C94A0C03A30DF7A /* RequestRetrier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestRetrier.swift; path = Source/RequestRetrier.swift; sourceTree = "<group>"; };
-		CE22DAFBDB9A80D4BC34DE264274F8F7 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		D0EEAE85881E78725942FBC013577632 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		D2334CCADD72074638AD529D5D2048B8 /* Pods-raspi-alarm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarm-acknowledgements.plist"; sourceTree = "<group>"; };
-		D4CA6C55AB9A791B873CD0368D054FB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D75B9E7BD550D8629FC8DCB69F566B2E /* Pods-raspi-alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarm.debug.xcconfig"; sourceTree = "<group>"; };
-		E420F0F4315B936B19DB812FE9ADA6C2 /* Pods-raspi-alarm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-raspi-alarm.modulemap"; sourceTree = "<group>"; };
-		ECF1D94FE002D1A823995847EE5F21CA /* Pods-raspi-alarm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-raspi-alarm-umbrella.h"; sourceTree = "<group>"; };
-		F0EEA6701D77813197AE9B71D737EA78 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		F65085582315C8F3BDFBBBE291EF15B6 /* Pods-raspi-alarmTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarmTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F722D15145538526B93DF7D00BE01FAE /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		FA8192DA1C27071FB5DB9AAA2F929D3A /* Pods-raspi-alarmTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-raspi-alarmTests-frameworks.sh"; sourceTree = "<group>"; };
-		FB577B56C1DDCFEA9AF5AB9DDF722D56 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0041474C3DEFDFE85AB2958B0F843AEC /* Pods-raspi-alarm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarm-acknowledgements.plist"; sourceTree = "<group>"; };
+		008419C7B709D69A059F54506CA8C87F /* Pods-raspi-alarm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-raspi-alarm.modulemap"; sourceTree = "<group>"; };
+		0781060E1804D1FBE53DAE1C12414AF9 /* Pods-raspi-alarmTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarmTests-Info.plist"; sourceTree = "<group>"; };
+		0922C1C0E70C42832AC411B9398AB046 /* Pods-raspi-alarm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-raspi-alarm-dummy.m"; sourceTree = "<group>"; };
+		1133B3D08E74CF04B352D2CBFF9D44B0 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		179C39101224420AC87FA631DE04AA3B /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		1D58B0786E719BE6EFBC74865A2A404E /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		1E78DDFCABFA4BCDEDB9134AF6EB5583 /* Pods-raspi-alarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarmUITests.release.xcconfig"; sourceTree = "<group>"; };
+		214792DC514FADC8BC5FE2EC4A99288D /* Pods_raspi_alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_raspi_alarm.framework; path = "Pods-raspi-alarm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		310E6C2DBFD1B5D48C1EF9FD442853F8 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		38652E3F62893CE5D38EC799B8D627DF /* Pods-raspi-alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarm.release.xcconfig"; sourceTree = "<group>"; };
+		41A8129C6DCEFA13A27E9235F46810B4 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		46AFCA52F5DD771FB857900D3171BBA1 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		49B696961AA379F0E3088F79A84558B4 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		4B958508C7D058E5D57F9E3138C99364 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		518A2651E0008CDE54CEF8569DCB5255 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		570ABD473BAED1FB0B2D88A7AFFB878A /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		577FBCEDFFDE5582A0FF0AF81E6C87B2 /* Pods-raspi-alarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarmTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D4A57229A2F1FD3F1C4ECD3FD5787D /* Pods-raspi-alarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63E5C0FD1B449E1167E75CD2A350F1A6 /* Pods-raspi-alarmTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarmTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		67EBA8D0B449D59C3B6CD2100C794315 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		6B0DFE8B7DED2D3BA6954394FE751E4E /* Pods-raspi-alarmUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-raspi-alarmUITests-umbrella.h"; sourceTree = "<group>"; };
+		7C248C5C7F03D637E9A79170BB17D58C /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		83290665532F894C77933E503FE2591A /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		8363705AC3CDF0F0E86D345E1EC6189E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		83911F1B6030C6CDE37E4692ECFCCE7D /* Pods_raspi_alarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_raspi_alarmUITests.framework; path = "Pods-raspi-alarmUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B3FBEBA71A072E962E5D0DECCC4AB3 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		84C86231380348327DB0434202BFA67C /* Pods-raspi-alarmTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-raspi-alarmTests-umbrella.h"; sourceTree = "<group>"; };
+		8603E2764B33114B78A46CAF4DB1A09D /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		863D8F021918D66ACC183065F57F133F /* Pods-raspi-alarmTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-raspi-alarmTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88DD1849A5F556705947679535E20925 /* Pods-raspi-alarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A51005E25B1D1C1896C21E4A4ADFFF5 /* Pods-raspi-alarm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-raspi-alarm-umbrella.h"; sourceTree = "<group>"; };
+		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8B5B1DF2317D88FFD85A28DDD8451214 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		8BB64E98B1CA58D96CD0222C05300730 /* Pods-raspi-alarmUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarmUITests-Info.plist"; sourceTree = "<group>"; };
+		8CC4D0B6B152E7D9715979089F2B65A7 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		941E65BBF1B9CCB550475C686CB87E26 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		9671678A75B7A54F3ECA445A504C7FA3 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		97F8FCD305185F15C30A04CABF93700F /* Pods-raspi-alarm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-raspi-alarm-frameworks.sh"; sourceTree = "<group>"; };
+		983EAD8FCD94B832C16B1E2109F2F505 /* Pods-raspi-alarmUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-raspi-alarmUITests-dummy.m"; sourceTree = "<group>"; };
+		9B0EB9427CCB141CD47A9427FDE6E90F /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		9B373D86A4EE82B80DFDB72866A0134B /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD040C443F181B77B018880BB3DA99E /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		9F9733501872D78FAE0C671B11CB6A63 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		A081C1A907F205234D36167B1A09635E /* Pods-raspi-alarmTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-raspi-alarmTests.modulemap"; sourceTree = "<group>"; };
+		A5D05381599A6880CC1298783F9DDC29 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		B4C0A3F737CF20D905EF67B5DB602AF9 /* Pods_raspi_alarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_raspi_alarmTests.framework; path = "Pods-raspi-alarmTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E80121BF02B03C18C902DF7233D289 /* Pods-raspi-alarmUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-raspi-alarmUITests.modulemap"; sourceTree = "<group>"; };
+		BBB41FE1EEF1E68207FE13D1F699068F /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		BE0FE0D55D55CE38412246560D2A1591 /* Pods-raspi-alarm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarm-Info.plist"; sourceTree = "<group>"; };
+		C14ED4FB5BCACE2A2214738432CED388 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		C3551D5902FC413598D369DB4C49A8A1 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		C383209F6E38DA528AE38920395553DE /* Pods-raspi-alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-raspi-alarm.debug.xcconfig"; sourceTree = "<group>"; };
+		C41D4F9932A0403E3160C4676EDA0246 /* Pods-raspi-alarmUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-raspi-alarmUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7EC34A32553BDD4198BC9444F1A5274 /* Pods-raspi-alarm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-raspi-alarm-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C92B117C11540CF77861467E80F1202D /* Pods-raspi-alarmUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-raspi-alarmUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBABAA677AEC5D9D955A327C156C1EE4 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		D881F5D8EC889A280E41C9B1CE779D1B /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		D8E117608B636886C909A5CC16BF3660 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		DC047B335E18A397650D6F192938D166 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		ECE9859F36FF9276E6CDFCFC1260E6A4 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		EFB1ACC6A0F5A951F9B3D6DCE18D5D82 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		F3B8657E3DC729B94E8452FB6FE4E3EE /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		F5A1F003C2D016165040FC9824891FEA /* Pods-raspi-alarmTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-raspi-alarmTests-dummy.m"; sourceTree = "<group>"; };
+		F74536AE846627474B8E184EF67DE9FB /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		F807F6271F866030763575D0EDD33C09 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		FAF587C039C07312E498A18A5A87BA17 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		FEBDB055DA55FE762B847D96EE7F5E5E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1DE8AE5EF91CE6AE614DEFE1BFC1C77B /* Frameworks */ = {
+		3AFE20BD638DD7873052C52B68236946 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				667D0E550469DD3A0DEDC3ECE44065C6 /* Foundation.framework in Frameworks */,
+				899C2A58788D28AB6FAD5366BA58AC25 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3461C0B991D35D58002C887ED62D0044 /* Frameworks */ = {
+		9AC04E1194B4CE2AF26135D183E99D01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDA734F2C9C31BEBD2934ACEE220954 /* Foundation.framework in Frameworks */,
+				E9D53BB1FA673CEABAFB2641D9692FD6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80FC40CF69547B85D61650BA484BDB0B /* Frameworks */ = {
+		9C1C2D14882937DB0594D5E1A90588BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28456FFE868335A61E28C0AA77F5DA67 /* Foundation.framework in Frameworks */,
+				543FF1D8EE33F8C1136EB945CDF2A3E2 /* CFNetwork.framework in Frameworks */,
+				DF22F9B2C3640931D82769C9E4707929 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F386A941986379D4FA26287E3EF70F3D /* Frameworks */ = {
+		D8944454145B8766D39A76D0F9F84A05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EBF94B8AB4DEE88320152AA4E68D4FB /* CFNetwork.framework in Frameworks */,
-				E28B7614D89DF25451537E8EE5BAB4BB /* Foundation.framework in Frameworks */,
+				177AC5D54DACB4485B8906931AADC0D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C061BBD7032105BC262EAC607E3BE26 /* Pods-raspi-alarm */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D4CA6C55AB9A791B873CD0368D054FB4 /* Info.plist */,
-				E420F0F4315B936B19DB812FE9ADA6C2 /* Pods-raspi-alarm.modulemap */,
-				123E5201299C927FB6ADB40590DCBC08 /* Pods-raspi-alarm-acknowledgements.markdown */,
-				D2334CCADD72074638AD529D5D2048B8 /* Pods-raspi-alarm-acknowledgements.plist */,
-				06ADBA9D5621D3C7894832A38FC329B4 /* Pods-raspi-alarm-dummy.m */,
-				9389CF1201345EB5A41E2E426602D6A8 /* Pods-raspi-alarm-frameworks.sh */,
-				837B85FCBE0E4E82049022BD45FD3EBD /* Pods-raspi-alarm-resources.sh */,
-				ECF1D94FE002D1A823995847EE5F21CA /* Pods-raspi-alarm-umbrella.h */,
-				D75B9E7BD550D8629FC8DCB69F566B2E /* Pods-raspi-alarm.debug.xcconfig */,
-				73FF83BAE1A988FF6E71CBD18F808832 /* Pods-raspi-alarm.release.xcconfig */,
-			);
-			name = "Pods-raspi-alarm";
-			path = "Target Support Files/Pods-raspi-alarm";
-			sourceTree = "<group>";
-		};
-		27B24E07A10B33FE70606D94106F4CD6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1C061BBD7032105BC262EAC607E3BE26 /* Pods-raspi-alarm */,
-				F00E15B4802702A76F37496C00F8607E /* Pods-raspi-alarmTests */,
-				CBD4BAAD30E5EE05C60B12EEC70CB321 /* Pods-raspi-alarmUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D52304B3F0670EE0236B3F34A532CB30 /* iOS */,
+				E34DCC8E2CF86B8D72232914781A840D /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		449713668617990541A023A503793D03 /* Pods */ = {
+		315E4D3F5AB0AD17BE6BDBAAF0B1E9D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA54B5C44CBD514EF46E82F7924E77B1 /* Alamofire */,
+				5383CA2B55526BC3F298BDB5D117EA9F /* Alamofire */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		455DF9583A779F07DF0EDADAEE1FF5A6 /* Pods-raspi-alarmTests */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				449713668617990541A023A503793D03 /* Pods */,
-				8F2C536FA2C501C71BAA8A08EAAFF2A5 /* Products */,
-				27B24E07A10B33FE70606D94106F4CD6 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8F2C536FA2C501C71BAA8A08EAAFF2A5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				123FFACE61871E3106B9CE9DB73A59E1 /* Alamofire.framework */,
-				5A04C7644B25A7E8710D470C4B65BB16 /* Pods_raspi_alarm.framework */,
-				129E995E8ACED4C038FC2632B170D70A /* Pods_raspi_alarmTests.framework */,
-				467BB3A73CE6AC06C83130E0AB122B8E /* Pods_raspi_alarmUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B3F1C586F520AD7BDB269306E85D1B3B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0E448EB13D6159AEAA42D2B4B42D3121 /* Alamofire.modulemap */,
-				F722D15145538526B93DF7D00BE01FAE /* Alamofire.xcconfig */,
-				3D595D6BD14BBA8A654159F7F8A8103D /* Alamofire-dummy.m */,
-				C7FB42D63344273D50E44EBB5F0A75ED /* Alamofire-prefix.pch */,
-				FB577B56C1DDCFEA9AF5AB9DDF722D56 /* Alamofire-umbrella.h */,
-				C29704322F8B6F024AC9618C817FE4A2 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		CBD4BAAD30E5EE05C60B12EEC70CB321 /* Pods-raspi-alarmUITests */ = {
-			isa = PBXGroup;
-			children = (
-				35AE521EABEA4666775A30F4EF58893C /* Info.plist */,
-				5CA1A9CD6FF76987003FEE87314A75E5 /* Pods-raspi-alarmUITests.modulemap */,
-				7D91A2D3D1D8F642D52446E619568118 /* Pods-raspi-alarmUITests-acknowledgements.markdown */,
-				9FEF9B588F78F910D5FDE4834892F5E9 /* Pods-raspi-alarmUITests-acknowledgements.plist */,
-				B2428841E431D06CE85EB9EFC39D4CC3 /* Pods-raspi-alarmUITests-dummy.m */,
-				A970D1F99B4458E7BFFA157B5ACBFE81 /* Pods-raspi-alarmUITests-frameworks.sh */,
-				12F5A022125FC809E277F603FFF4C8CE /* Pods-raspi-alarmUITests-resources.sh */,
-				37BF6628813D8E20289455824DAE1F7F /* Pods-raspi-alarmUITests-umbrella.h */,
-				215334D37E8260047EB2CFBE7A282B0B /* Pods-raspi-alarmUITests.debug.xcconfig */,
-				71E032BB3BBC52D753DCF76CEBF1F050 /* Pods-raspi-alarmUITests.release.xcconfig */,
-			);
-			name = "Pods-raspi-alarmUITests";
-			path = "Target Support Files/Pods-raspi-alarmUITests";
-			sourceTree = "<group>";
-		};
-		D52304B3F0670EE0236B3F34A532CB30 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				C6757C44D1A8B62FD3A7062E345EA7F6 /* CFNetwork.framework */,
-				89DC365FEF314CAE9760892B813E187E /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		F00E15B4802702A76F37496C00F8607E /* Pods-raspi-alarmTests */ = {
-			isa = PBXGroup;
-			children = (
-				120E5CF81C563D35A65ABF550BEA6FEC /* Info.plist */,
-				0826A370D88B474F63BA72F1C914B90D /* Pods-raspi-alarmTests.modulemap */,
-				0CA2D23CDF15645189DD5D05B91DE13A /* Pods-raspi-alarmTests-acknowledgements.markdown */,
-				F65085582315C8F3BDFBBBE291EF15B6 /* Pods-raspi-alarmTests-acknowledgements.plist */,
-				931707AE6E716E47E8CED6B5A69EAB8B /* Pods-raspi-alarmTests-dummy.m */,
-				FA8192DA1C27071FB5DB9AAA2F929D3A /* Pods-raspi-alarmTests-frameworks.sh */,
-				7085AE2F496D828AB35CE9C2475D9524 /* Pods-raspi-alarmTests-resources.sh */,
-				5B9FEE902BA2562676C054936FBA1322 /* Pods-raspi-alarmTests-umbrella.h */,
-				275BC98B1155D8E7B65973F029DCC7A0 /* Pods-raspi-alarmTests.debug.xcconfig */,
-				B6E01E8D1CE4137417F244B5327F0AD8 /* Pods-raspi-alarmTests.release.xcconfig */,
+				A081C1A907F205234D36167B1A09635E /* Pods-raspi-alarmTests.modulemap */,
+				863D8F021918D66ACC183065F57F133F /* Pods-raspi-alarmTests-acknowledgements.markdown */,
+				63E5C0FD1B449E1167E75CD2A350F1A6 /* Pods-raspi-alarmTests-acknowledgements.plist */,
+				F5A1F003C2D016165040FC9824891FEA /* Pods-raspi-alarmTests-dummy.m */,
+				0781060E1804D1FBE53DAE1C12414AF9 /* Pods-raspi-alarmTests-Info.plist */,
+				84C86231380348327DB0434202BFA67C /* Pods-raspi-alarmTests-umbrella.h */,
+				88DD1849A5F556705947679535E20925 /* Pods-raspi-alarmTests.debug.xcconfig */,
+				577FBCEDFFDE5582A0FF0AF81E6C87B2 /* Pods-raspi-alarmTests.release.xcconfig */,
 			);
 			name = "Pods-raspi-alarmTests";
 			path = "Target Support Files/Pods-raspi-alarmTests";
 			sourceTree = "<group>";
 		};
-		FA54B5C44CBD514EF46E82F7924E77B1 /* Alamofire */ = {
+		4CAF714AC04F3731A170C0160B96F9C1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A82F850716346F95F4E63A5EB954F426 /* AFError.swift */,
-				72F9327834905EDFD3487B0DDA25971F /* Alamofire.swift */,
-				4CE85DE51B090878250F0B38515945BF /* DispatchQueue+Alamofire.swift */,
-				CAE009DB6A5CE13533CAD9B642CEB79D /* EventMonitor.swift */,
-				2B793ADE198C44D75D86E7D5479E9B7E /* HTTPHeaders.swift */,
-				6FACF72D296C846658A43715CA642FB1 /* HTTPMethod.swift */,
-				4B07A14F5EC7E5009225D80B41CC7D8B /* MultipartFormData.swift */,
-				6B0AFE7AB890DAFBEEAB470309EBBA99 /* MultipartUpload.swift */,
-				86EA0D14512F9227C2FB6A6E2B8748AA /* NetworkReachabilityManager.swift */,
-				8F0DC5771FD12FAE67FE67A452759B55 /* Notifications.swift */,
-				457D5747BE9D5FA6D29264CB65B45F5F /* OperationQueue+Alamofire.swift */,
-				CE22DAFBDB9A80D4BC34DE264274F8F7 /* ParameterEncoder.swift */,
-				301F9B721F62AE6E9D332FEE303EAA76 /* ParameterEncoding.swift */,
-				9D6C4E8AC090B9BDE99CEE908241AC7B /* Protector.swift */,
-				D0EEAE85881E78725942FBC013577632 /* Request.swift */,
-				887FEAE78FF58B3F1B03529507B0D79E /* RequestAdapter.swift */,
-				CCAE330FE18EF53A1C94A0C03A30DF7A /* RequestRetrier.swift */,
-				9AE55764E33804E65BFB46C19EE6BAD7 /* RequestTaskMap.swift */,
-				9AD339498A455B8B12D257807027C542 /* Response.swift */,
-				5997D1D0BCF26F8C9831B6C452B7C437 /* ResponseSerialization.swift */,
-				F0EEA6701D77813197AE9B71D737EA78 /* Result.swift */,
-				3860C5BCF783D9DA203DB806225D04B5 /* ServerTrustEvaluation.swift */,
-				BC0A0FFF9245D7D6659687C4DC11AD61 /* Session.swift */,
-				1FEBFE8706839183086EA1FA62C7D27F /* SessionStateProvider.swift */,
-				729155AC33DF723C67ECE65CF6E28BF5 /* URLConvertible+URLRequestConvertible.swift */,
-				00BCB0E6580DEC60FC013818A0E1271A /* URLSessionConfiguration+Alamofire.swift */,
-				8796AF79E3B2EEE5F2996E57D2EEB344 /* Validation.swift */,
-				B3F1C586F520AD7BDB269306E85D1B3B /* Support Files */,
+				D8E93F3C0EE94BD3B7B4A1DAA32A967B /* Pods-raspi-alarm */,
+				455DF9583A779F07DF0EDADAEE1FF5A6 /* Pods-raspi-alarmTests */,
+				B2E17FBA9E66943185156240D1ECF30D /* Pods-raspi-alarmUITests */,
 			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4CFC60CC17825E0B6D2FC9E867C95021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				214792DC514FADC8BC5FE2EC4A99288D /* Pods_raspi_alarm.framework */,
+				B4C0A3F737CF20D905EF67B5DB602AF9 /* Pods_raspi_alarmTests.framework */,
+				83911F1B6030C6CDE37E4692ECFCCE7D /* Pods_raspi_alarmUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5383CA2B55526BC3F298BDB5D117EA9F /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				310E6C2DBFD1B5D48C1EF9FD442853F8 /* AFError.swift */,
+				F3B8657E3DC729B94E8452FB6FE4E3EE /* Alamofire.swift */,
+				1133B3D08E74CF04B352D2CBFF9D44B0 /* AlamofireExtended.swift */,
+				570ABD473BAED1FB0B2D88A7AFFB878A /* CachedResponseHandler.swift */,
+				F807F6271F866030763575D0EDD33C09 /* DispatchQueue+Alamofire.swift */,
+				8603E2764B33114B78A46CAF4DB1A09D /* EventMonitor.swift */,
+				49B696961AA379F0E3088F79A84558B4 /* HTTPHeaders.swift */,
+				179C39101224420AC87FA631DE04AA3B /* HTTPMethod.swift */,
+				D881F5D8EC889A280E41C9B1CE779D1B /* MultipartFormData.swift */,
+				9B373D86A4EE82B80DFDB72866A0134B /* MultipartUpload.swift */,
+				ECE9859F36FF9276E6CDFCFC1260E6A4 /* NetworkReachabilityManager.swift */,
+				9671678A75B7A54F3ECA445A504C7FA3 /* Notifications.swift */,
+				83290665532F894C77933E503FE2591A /* OperationQueue+Alamofire.swift */,
+				83B3FBEBA71A072E962E5D0DECCC4AB3 /* ParameterEncoder.swift */,
+				FEBDB055DA55FE762B847D96EE7F5E5E /* ParameterEncoding.swift */,
+				518A2651E0008CDE54CEF8569DCB5255 /* Protected.swift */,
+				9F9733501872D78FAE0C671B11CB6A63 /* RedirectHandler.swift */,
+				C14ED4FB5BCACE2A2214738432CED388 /* Request.swift */,
+				941E65BBF1B9CCB550475C686CB87E26 /* RequestInterceptor.swift */,
+				1D58B0786E719BE6EFBC74865A2A404E /* RequestTaskMap.swift */,
+				8CC4D0B6B152E7D9715979089F2B65A7 /* Response.swift */,
+				BBB41FE1EEF1E68207FE13D1F699068F /* ResponseSerialization.swift */,
+				8B5B1DF2317D88FFD85A28DDD8451214 /* Result+Alamofire.swift */,
+				DC047B335E18A397650D6F192938D166 /* RetryPolicy.swift */,
+				9DD040C443F181B77B018880BB3DA99E /* ServerTrustEvaluation.swift */,
+				67EBA8D0B449D59C3B6CD2100C794315 /* Session.swift */,
+				7C248C5C7F03D637E9A79170BB17D58C /* SessionDelegate.swift */,
+				9B0EB9427CCB141CD47A9427FDE6E90F /* StringEncoding+Alamofire.swift */,
+				CBABAA677AEC5D9D955A327C156C1EE4 /* URLConvertible+URLRequestConvertible.swift */,
+				EFB1ACC6A0F5A951F9B3D6DCE18D5D82 /* URLEncodedFormEncoder.swift */,
+				A5D05381599A6880CC1298783F9DDC29 /* URLRequest+Alamofire.swift */,
+				41A8129C6DCEFA13A27E9235F46810B4 /* URLSessionConfiguration+Alamofire.swift */,
+				8363705AC3CDF0F0E86D345E1EC6189E /* Validation.swift */,
+				A02AE86C60A7B10A45EE3B31DBCAAF6D /* Support Files */,
+			);
+			name = Alamofire;
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		A02AE86C60A7B10A45EE3B31DBCAAF6D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3551D5902FC413598D369DB4C49A8A1 /* Alamofire.modulemap */,
+				F74536AE846627474B8E184EF67DE9FB /* Alamofire.xcconfig */,
+				46AFCA52F5DD771FB857900D3171BBA1 /* Alamofire-dummy.m */,
+				D8E117608B636886C909A5CC16BF3660 /* Alamofire-Info.plist */,
+				4B958508C7D058E5D57F9E3138C99364 /* Alamofire-prefix.pch */,
+				FAF587C039C07312E498A18A5A87BA17 /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		B2E17FBA9E66943185156240D1ECF30D /* Pods-raspi-alarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9E80121BF02B03C18C902DF7233D289 /* Pods-raspi-alarmUITests.modulemap */,
+				C41D4F9932A0403E3160C4676EDA0246 /* Pods-raspi-alarmUITests-acknowledgements.markdown */,
+				C92B117C11540CF77861467E80F1202D /* Pods-raspi-alarmUITests-acknowledgements.plist */,
+				983EAD8FCD94B832C16B1E2109F2F505 /* Pods-raspi-alarmUITests-dummy.m */,
+				8BB64E98B1CA58D96CD0222C05300730 /* Pods-raspi-alarmUITests-Info.plist */,
+				6B0DFE8B7DED2D3BA6954394FE751E4E /* Pods-raspi-alarmUITests-umbrella.h */,
+				60D4A57229A2F1FD3F1C4ECD3FD5787D /* Pods-raspi-alarmUITests.debug.xcconfig */,
+				1E78DDFCABFA4BCDEDB9134AF6EB5583 /* Pods-raspi-alarmUITests.release.xcconfig */,
+			);
+			name = "Pods-raspi-alarmUITests";
+			path = "Target Support Files/Pods-raspi-alarmUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				315E4D3F5AB0AD17BE6BDBAAF0B1E9D0 /* Pods */,
+				4CFC60CC17825E0B6D2FC9E867C95021 /* Products */,
+				4CAF714AC04F3731A170C0160B96F9C1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D8E93F3C0EE94BD3B7B4A1DAA32A967B /* Pods-raspi-alarm */ = {
+			isa = PBXGroup;
+			children = (
+				008419C7B709D69A059F54506CA8C87F /* Pods-raspi-alarm.modulemap */,
+				C7EC34A32553BDD4198BC9444F1A5274 /* Pods-raspi-alarm-acknowledgements.markdown */,
+				0041474C3DEFDFE85AB2958B0F843AEC /* Pods-raspi-alarm-acknowledgements.plist */,
+				0922C1C0E70C42832AC411B9398AB046 /* Pods-raspi-alarm-dummy.m */,
+				97F8FCD305185F15C30A04CABF93700F /* Pods-raspi-alarm-frameworks.sh */,
+				BE0FE0D55D55CE38412246560D2A1591 /* Pods-raspi-alarm-Info.plist */,
+				8A51005E25B1D1C1896C21E4A4ADFFF5 /* Pods-raspi-alarm-umbrella.h */,
+				C383209F6E38DA528AE38920395553DE /* Pods-raspi-alarm.debug.xcconfig */,
+				38652E3F62893CE5D38EC799B8D627DF /* Pods-raspi-alarm.release.xcconfig */,
+			);
+			name = "Pods-raspi-alarm";
+			path = "Target Support Files/Pods-raspi-alarm";
+			sourceTree = "<group>";
+		};
+		E34DCC8E2CF86B8D72232914781A840D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */,
+				222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		009E40953DCD4C0799DB27C4DF8F9E37 /* Headers */ = {
+		2079F2AF2526AECD010A32A559F7DEF1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7CFD7F95293857ED0EA4624A88573AD /* Alamofire-umbrella.h in Headers */,
+				06E5882CFE15F902D04808EC4C10DAC2 /* Pods-raspi-alarmUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75E32EFECB61BC1EFED48718C59296FF /* Headers */ = {
+		876A2930F5A009B6977F7F36A5D7FC36 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7267B06EB5A13BF18F455C277A9D88A2 /* Pods-raspi-alarmTests-umbrella.h in Headers */,
+				19EE6C29DB4104C33356362788ABB107 /* Pods-raspi-alarmTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80290F7F6EFF257747E4CED5CC418EEE /* Headers */ = {
+		8BE81717BD19251715AD330F04EFD30B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45056B0F614102C5195D3A9C43B25F4D /* Pods-raspi-alarmUITests-umbrella.h in Headers */,
+				994F5C2FE6FDC139E0C41DC9E5D6C975 /* Pods-raspi-alarm-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D07013FDC24E7706671CA75943AF5913 /* Headers */ = {
+		DD5134CC0AD214337C10CC46995CC3CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D363697ECBED1DF98A5E1428E95AA63B /* Pods-raspi-alarm-umbrella.h in Headers */,
+				2BC73DE30871EA6F7D9F600D50F11726 /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1BCC60C427FDB86B5B7A530D3161AA82 /* Pods-raspi-alarm */ = {
+		52651425610780A1A0F933F67C13B3D6 /* Pods-raspi-alarmUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1ACF2FFB8B1C5000EB4090F5D675BC6 /* Build configuration list for PBXNativeTarget "Pods-raspi-alarm" */;
+			buildConfigurationList = 9442D0C7E4BAFCE1F128F204A3C1891E /* Build configuration list for PBXNativeTarget "Pods-raspi-alarmUITests" */;
 			buildPhases = (
-				B974BE85E4E8F3BB44E84ED310EE63E2 /* Sources */,
-				80FC40CF69547B85D61650BA484BDB0B /* Frameworks */,
-				D07013FDC24E7706671CA75943AF5913 /* Headers */,
+				2079F2AF2526AECD010A32A559F7DEF1 /* Headers */,
+				2219817EC999A6AAC7793CEDE3B86815 /* Sources */,
+				3AFE20BD638DD7873052C52B68236946 /* Frameworks */,
+				477BB8C07BCD7EFBE8CAC34F1BE0379C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F48BD216835BDA0DA30B1109B97675A0 /* PBXTargetDependency */,
+				C49AFFE7E3676FDF91E1FDEC68F89465 /* PBXTargetDependency */,
 			);
-			name = "Pods-raspi-alarm";
-			productName = "Pods-raspi-alarm";
-			productReference = 5A04C7644B25A7E8710D470C4B65BB16 /* Pods_raspi_alarm.framework */;
+			name = "Pods-raspi-alarmUITests";
+			productName = "Pods-raspi-alarmUITests";
+			productReference = 83911F1B6030C6CDE37E4692ECFCCE7D /* Pods_raspi_alarmUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D114E0DD9FAF4C2E30A6306268FD1F67 /* Alamofire */ = {
+		5E608EE81DCD63580416FD8F99F49A54 /* Pods-raspi-alarmTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C372924BFCF98A73855545C99DF1E657 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildConfigurationList = 8ECA01499BBB126D881943884049D422 /* Build configuration list for PBXNativeTarget "Pods-raspi-alarmTests" */;
 			buildPhases = (
-				F9D19E57E3282FF08BD72F3FDC91B339 /* Sources */,
-				F386A941986379D4FA26287E3EF70F3D /* Frameworks */,
-				009E40953DCD4C0799DB27C4DF8F9E37 /* Headers */,
+				876A2930F5A009B6977F7F36A5D7FC36 /* Headers */,
+				542A68523777596A12F0DECCF31E5FB4 /* Sources */,
+				D8944454145B8766D39A76D0F9F84A05 /* Frameworks */,
+				1E5C1E5229DC766349F67CE93C135341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFA4DA3880CDDBCF4D7E1ADB37E0A4DF /* PBXTargetDependency */,
+			);
+			name = "Pods-raspi-alarmTests";
+			productName = "Pods-raspi-alarmTests";
+			productReference = B4C0A3F737CF20D905EF67B5DB602AF9 /* Pods_raspi_alarmTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B2E6A7DD9BEFE908126937ABFFCB84F /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				DD5134CC0AD214337C10CC46995CC3CE /* Headers */,
+				DA97C7E8121266408747CC86023CA8A2 /* Sources */,
+				9C1C2D14882937DB0594D5E1A90588BE /* Frameworks */,
+				69CDCEDFFCFB1CD5B62AE1ADB0858B89 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -413,161 +443,181 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 123FFACE61871E3106B9CE9DB73A59E1 /* Alamofire.framework */;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EEF4FF99E5BFD1C9B02174F46CE3C416 /* Pods-raspi-alarmUITests */ = {
+		FFF54D6FACF0A095BFCB68D3E894FB49 /* Pods-raspi-alarm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B81453E2F8F22BE156E2A89896CC61C /* Build configuration list for PBXNativeTarget "Pods-raspi-alarmUITests" */;
+			buildConfigurationList = 3DE96D1E6529C7956ED777223ACC4DEA /* Build configuration list for PBXNativeTarget "Pods-raspi-alarm" */;
 			buildPhases = (
-				03AC940AF149B77401BDEB44DE65D09A /* Sources */,
-				3461C0B991D35D58002C887ED62D0044 /* Frameworks */,
-				80290F7F6EFF257747E4CED5CC418EEE /* Headers */,
+				8BE81717BD19251715AD330F04EFD30B /* Headers */,
+				6D667B28667D9C66D0EDA718241DFD9D /* Sources */,
+				9AC04E1194B4CE2AF26135D183E99D01 /* Frameworks */,
+				99CA0180F33084F216E9A65BE98506A4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6337F13167B91F4CA634780B5E43D463 /* PBXTargetDependency */,
+				ABAF667D851B624701AD016424A96B49 /* PBXTargetDependency */,
 			);
-			name = "Pods-raspi-alarmUITests";
-			productName = "Pods-raspi-alarmUITests";
-			productReference = 467BB3A73CE6AC06C83130E0AB122B8E /* Pods_raspi_alarmUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FCCA7843DA33250CF71E40FA92FE0E6C /* Pods-raspi-alarmTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 98EDC844249334FAF8D9BD8C20BA5E14 /* Build configuration list for PBXNativeTarget "Pods-raspi-alarmTests" */;
-			buildPhases = (
-				74896061587E2A9CB157F5E3A82D806C /* Sources */,
-				1DE8AE5EF91CE6AE614DEFE1BFC1C77B /* Frameworks */,
-				75E32EFECB61BC1EFED48718C59296FF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C20A7D3A6D2B5240ADC65C8E4F8DAF6F /* PBXTargetDependency */,
-			);
-			name = "Pods-raspi-alarmTests";
-			productName = "Pods-raspi-alarmTests";
-			productReference = 129E995E8ACED4C038FC2632B170D70A /* Pods_raspi_alarmTests.framework */;
+			name = "Pods-raspi-alarm";
+			productName = "Pods-raspi-alarm";
+			productReference = 214792DC514FADC8BC5FE2EC4A99288D /* Pods_raspi_alarm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 8F2C536FA2C501C71BAA8A08EAAFF2A5 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4CFC60CC17825E0B6D2FC9E867C95021 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D114E0DD9FAF4C2E30A6306268FD1F67 /* Alamofire */,
-				1BCC60C427FDB86B5B7A530D3161AA82 /* Pods-raspi-alarm */,
-				FCCA7843DA33250CF71E40FA92FE0E6C /* Pods-raspi-alarmTests */,
-				EEF4FF99E5BFD1C9B02174F46CE3C416 /* Pods-raspi-alarmUITests */,
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				FFF54D6FACF0A095BFCB68D3E894FB49 /* Pods-raspi-alarm */,
+				5E608EE81DCD63580416FD8F99F49A54 /* Pods-raspi-alarmTests */,
+				52651425610780A1A0F933F67C13B3D6 /* Pods-raspi-alarmUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1E5C1E5229DC766349F67CE93C135341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477BB8C07BCD7EFBE8CAC34F1BE0379C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CDCEDFFCFB1CD5B62AE1ADB0858B89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CA0180F33084F216E9A65BE98506A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		03AC940AF149B77401BDEB44DE65D09A /* Sources */ = {
+		2219817EC999A6AAC7793CEDE3B86815 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1406ACFDC58DE31B1DDC7D45F5D7769C /* Pods-raspi-alarmUITests-dummy.m in Sources */,
+				ED696CF159BF1B6BCABD0B445A4DAB7B /* Pods-raspi-alarmUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74896061587E2A9CB157F5E3A82D806C /* Sources */ = {
+		542A68523777596A12F0DECCF31E5FB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D635A3AE5EE1BC067D5C7EF4021A7C0 /* Pods-raspi-alarmTests-dummy.m in Sources */,
+				09DF23C58E6B085520B8378124FA4F08 /* Pods-raspi-alarmTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B974BE85E4E8F3BB44E84ED310EE63E2 /* Sources */ = {
+		6D667B28667D9C66D0EDA718241DFD9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D6AC86AB442241775988EDD8FF33EB /* Pods-raspi-alarm-dummy.m in Sources */,
+				9C58D6B6D3DD53A73CF3BB86D535AE53 /* Pods-raspi-alarm-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9D19E57E3282FF08BD72F3FDC91B339 /* Sources */ = {
+		DA97C7E8121266408747CC86023CA8A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CEB4B9576E128A08CBDC0FF2F2BFF16 /* AFError.swift in Sources */,
-				D686D3B34D77085248333133F2C689A8 /* Alamofire-dummy.m in Sources */,
-				BDEBD2CAED6F09F5D698940A05F5BA4D /* Alamofire.swift in Sources */,
-				F87C8BEDAC8E6241EA2A50D693120D40 /* DispatchQueue+Alamofire.swift in Sources */,
-				D54B134B273849579F0BBAC6AA82E623 /* EventMonitor.swift in Sources */,
-				27963FB04CE2FC16943DAD1BAC2308E3 /* HTTPHeaders.swift in Sources */,
-				CC7E18B39BCB654907114A8E89C9A6D6 /* HTTPMethod.swift in Sources */,
-				2D175C7FC4573B5A233059D50A8CC832 /* MultipartFormData.swift in Sources */,
-				03FC4A2F89ED315E272D017AB6BC1295 /* MultipartUpload.swift in Sources */,
-				C52C99008B051B8AC4B417859B0F7C35 /* NetworkReachabilityManager.swift in Sources */,
-				66F668DB539B370C1EE3C5ED683B7007 /* Notifications.swift in Sources */,
-				6C04321950B4319D173C6D0BEDD82DD1 /* OperationQueue+Alamofire.swift in Sources */,
-				1ED88D6376FE180B204286D0EE77AF83 /* ParameterEncoder.swift in Sources */,
-				24903B8E4925AE7FAB3C9992121661BC /* ParameterEncoding.swift in Sources */,
-				5E906A431B11C9AF47928B1B7F6F7B3B /* Protector.swift in Sources */,
-				5B9AE586E201EBD6E622E45837FC95AB /* Request.swift in Sources */,
-				1FF43122AA3F36310AC5B00775DB90D3 /* RequestAdapter.swift in Sources */,
-				F168C957287E4B72AF35413363644EF3 /* RequestRetrier.swift in Sources */,
-				98A2FDAC6DF550FC90D7494ABCEF9A91 /* RequestTaskMap.swift in Sources */,
-				0284401AD2BEE1FFA91BD2BC4E78D375 /* Response.swift in Sources */,
-				2F55D6B84C8A7AB2225F4D1274AE89F1 /* ResponseSerialization.swift in Sources */,
-				469013458A705F77539DEE373173B75B /* Result.swift in Sources */,
-				F76D583E10917C15064DA6317E8AFE55 /* ServerTrustEvaluation.swift in Sources */,
-				D8D4AEC4AA3AFA6CB9700486515AB17C /* Session.swift in Sources */,
-				12C01A8967E7D3C125DD7F2A3EE577AB /* SessionStateProvider.swift in Sources */,
-				F797F3BAB0E9CC386F9CAFF72CE472F8 /* URLConvertible+URLRequestConvertible.swift in Sources */,
-				A5AF953B7F4A8AE6C0E3B343A794D2E7 /* URLSessionConfiguration+Alamofire.swift in Sources */,
-				DFAE1412B5D887B5869FF874D600B1FF /* Validation.swift in Sources */,
+				165F498AB8762893E957BCE0D70F4439 /* AFError.swift in Sources */,
+				4F767680534EDD5E80E526C3D76989B2 /* Alamofire-dummy.m in Sources */,
+				DA6512AAAFD92EFA9860ED84C3A308B9 /* Alamofire.swift in Sources */,
+				AA8023C0CFE561DB8B8D92232C6125B1 /* AlamofireExtended.swift in Sources */,
+				E4E727DD13DA225D574D9880D9CB7348 /* CachedResponseHandler.swift in Sources */,
+				433815428539A3F818A385B0EFEFB8DC /* DispatchQueue+Alamofire.swift in Sources */,
+				DA07C0CDF1B0FBC959A4406DE142A081 /* EventMonitor.swift in Sources */,
+				85E10F2E2F0044C1ACE78F76395F9077 /* HTTPHeaders.swift in Sources */,
+				6C8EC166C81EB4E72450A002224658DC /* HTTPMethod.swift in Sources */,
+				F5E436F5E8C598430FABC8787E517F96 /* MultipartFormData.swift in Sources */,
+				918548CAAC87215B4960B1F4D2A71769 /* MultipartUpload.swift in Sources */,
+				1CE8BDA6C86345FD31F42F3AECB375EA /* NetworkReachabilityManager.swift in Sources */,
+				60D4B28D45B4164E21715CF68D1E239B /* Notifications.swift in Sources */,
+				E618A89E126F408A59FE3167A6CBB510 /* OperationQueue+Alamofire.swift in Sources */,
+				2BE0DE689754A1603251EB331450718E /* ParameterEncoder.swift in Sources */,
+				4AAB3F2054BD0939C95D961A3BAA43B4 /* ParameterEncoding.swift in Sources */,
+				D0F6D13D0DC583351F5F6BCA1CB04ABD /* Protected.swift in Sources */,
+				AAE822224E085A6362FA7122C0605078 /* RedirectHandler.swift in Sources */,
+				08281777D479CF46F0E0F24753E01A63 /* Request.swift in Sources */,
+				DDA3EF3B4A1D99E1E4AB016CFC1B544D /* RequestInterceptor.swift in Sources */,
+				37A2FCD24ED22C8D670188930CE4CA5D /* RequestTaskMap.swift in Sources */,
+				EE5FCC4133C3E712B85676510F2A3D7B /* Response.swift in Sources */,
+				B2047F988C61D368E76A806D5227329E /* ResponseSerialization.swift in Sources */,
+				CB436452F5C36FC049E26A8C0475965C /* Result+Alamofire.swift in Sources */,
+				408258CCC9DF9A5BD371EBEC8286CD81 /* RetryPolicy.swift in Sources */,
+				57B60987700B37698F1C9996AF526AD5 /* ServerTrustEvaluation.swift in Sources */,
+				EE1F347816E69DB6AB8513488D9D08FF /* Session.swift in Sources */,
+				964030107A87D7C1B25628B02C0E563F /* SessionDelegate.swift in Sources */,
+				80DBE8FF4DFE41CB54687CAB6A29F1B3 /* StringEncoding+Alamofire.swift in Sources */,
+				CDCDB8A355FE70F12855CC8A3657E739 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				9DC4A6FCE96D312A9EE0E5D51B4D4A80 /* URLEncodedFormEncoder.swift in Sources */,
+				003B9FC9E937C82635CF68E9E3576B52 /* URLRequest+Alamofire.swift in Sources */,
+				2933B39BFCEF204A508F4FFF3188AD27 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				0FF6A3BBA9E9DAAE2E741513546FC4B6 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6337F13167B91F4CA634780B5E43D463 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-raspi-alarm";
-			target = 1BCC60C427FDB86B5B7A530D3161AA82 /* Pods-raspi-alarm */;
-			targetProxy = 78EC1138E101D2738CC5C7D46878D1DE /* PBXContainerItemProxy */;
-		};
-		C20A7D3A6D2B5240ADC65C8E4F8DAF6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-raspi-alarm";
-			target = 1BCC60C427FDB86B5B7A530D3161AA82 /* Pods-raspi-alarm */;
-			targetProxy = 452837D5906ACE1CE35AA6E229E35370 /* PBXContainerItemProxy */;
-		};
-		F48BD216835BDA0DA30B1109B97675A0 /* PBXTargetDependency */ = {
+		ABAF667D851B624701AD016424A96B49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
-			target = D114E0DD9FAF4C2E30A6306268FD1F67 /* Alamofire */;
-			targetProxy = 50797E74F0930018B42EFA34CE35C5ED /* PBXContainerItemProxy */;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 2296AD26567F2CFE58410DDE33F68FB9 /* PBXContainerItemProxy */;
+		};
+		C49AFFE7E3676FDF91E1FDEC68F89465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-raspi-alarm";
+			target = FFF54D6FACF0A095BFCB68D3E894FB49 /* Pods-raspi-alarm */;
+			targetProxy = C02EA20FB09147249F802524A6295722 /* PBXContainerItemProxy */;
+		};
+		CFA4DA3880CDDBCF4D7E1ADB37E0A4DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-raspi-alarm";
+			target = FFF54D6FACF0A095BFCB68D3E894FB49 /* Pods-raspi-alarm */;
+			targetProxy = 38EA98091FC6A04D4A2846C1F81FEE89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		020AFDE858A008DD71811E07CE5734BD /* Debug */ = {
+		07BF3293498E259A4A0ACE67577F266E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D75B9E7BD550D8629FC8DCB69F566B2E /* Pods-raspi-alarm.debug.xcconfig */;
+			baseConfigurationReference = 88DD1849A5F556705947679535E20925 /* Pods-raspi-alarmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -580,12 +630,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarm/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -593,17 +647,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		027672E8CAA3661A4B3DFF7B6A6BCAA7 /* Release */ = {
+		19078B80FDA208DDFBAEBDEADEDACAF8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6E01E8D1CE4137417F244B5327F0AD8 /* Pods-raspi-alarmTests.release.xcconfig */;
+			baseConfigurationReference = 1E78DDFCABFA4BCDEDB9134AF6EB5583 /* Pods-raspi-alarmUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -616,12 +668,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarmTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -636,7 +692,7 @@
 			};
 			name = Release;
 		};
-		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
+		32C2FB3BD9A2402E2347CE50F405010A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -668,8 +724,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -688,18 +742,20 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		34A23DCD2927464D14AF4D2B96386C80 /* Debug */ = {
+		5C67D94C621EFAAABE98432CBADC2AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 275BC98B1155D8E7B65973F029DCC7A0 /* Pods-raspi-alarmTests.debug.xcconfig */;
+			baseConfigurationReference = F74536AE846627474B8E184EF67DE9FB /* Alamofire.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -710,96 +766,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarmTests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		365FAF12FA6047F0A06217A9C6D869FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 215334D37E8260047EB2CFBE7A282B0B /* Pods-raspi-alarmUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarmUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4EE8D3C341F928EFD5D8040B3BD8CCDB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73FF83BAE1A988FF6E71CBD18F808832 /* Pods-raspi-alarm.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarm/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+		65E8432CA1AC1817F746BE6B5C4F067E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -831,8 +820,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -853,18 +840,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		9D69C33A087E9CBFD698FDC528E971D1 /* Release */ = {
+		67137FAB45007DBDB59FEB00EEAA6A39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71E032BB3BBC52D753DCF76CEBF1F050 /* Pods-raspi-alarmUITests.release.xcconfig */;
+			baseConfigurationReference = 38652E3F62893CE5D38EC799B8D627DF /* Pods-raspi-alarm.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -877,12 +867,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarmUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -897,10 +891,11 @@
 			};
 			name = Release;
 		};
-		9FDCC8454899D5058778C75F41C1BE44 /* Debug */ = {
+		6E83A4C8BE223C665FE93B3D95065CA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F722D15145538526B93DF7D00BE01FAE /* Alamofire.xcconfig */;
+			baseConfigurationReference = 577FBCEDFFDE5582A0FF0AF81E6C87B2 /* Pods-raspi-alarmTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -911,52 +906,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarmTests/Pods-raspi-alarmTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B480A5EC1879EBF94787856EB8AF1614 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F722D15145538526B93DF7D00BE01FAE /* Alamofire.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -964,55 +930,168 @@
 			};
 			name = Release;
 		};
+		C176F275DD125EDCF74ED72FCA909D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C383209F6E38DA528AE38920395553DE /* Pods-raspi-alarm.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarm/Pods-raspi-alarm.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C97CBBAAFF2D6DAB767EF42536DDC3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74536AE846627474B8E184EF67DE9FB /* Alamofire.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBC907955AF89129F95B33E3EA0F4D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D4A57229A2F1FD3F1C4ECD3FD5787D /* Pods-raspi-alarmUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-raspi-alarmUITests/Pods-raspi-alarmUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		3DE96D1E6529C7956ED777223ACC4DEA /* Build configuration list for PBXNativeTarget "Pods-raspi-alarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
-				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+				C176F275DD125EDCF74ED72FCA909D03 /* Debug */,
+				67137FAB45007DBDB59FEB00EEAA6A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B81453E2F8F22BE156E2A89896CC61C /* Build configuration list for PBXNativeTarget "Pods-raspi-alarmUITests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				365FAF12FA6047F0A06217A9C6D869FA /* Debug */,
-				9D69C33A087E9CBFD698FDC528E971D1 /* Release */,
+				65E8432CA1AC1817F746BE6B5C4F067E /* Debug */,
+				32C2FB3BD9A2402E2347CE50F405010A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98EDC844249334FAF8D9BD8C20BA5E14 /* Build configuration list for PBXNativeTarget "Pods-raspi-alarmTests" */ = {
+		4B2E6A7DD9BEFE908126937ABFFCB84F /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				34A23DCD2927464D14AF4D2B96386C80 /* Debug */,
-				027672E8CAA3661A4B3DFF7B6A6BCAA7 /* Release */,
+				5C67D94C621EFAAABE98432CBADC2AD8 /* Debug */,
+				C97CBBAAFF2D6DAB767EF42536DDC3D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B1ACF2FFB8B1C5000EB4090F5D675BC6 /* Build configuration list for PBXNativeTarget "Pods-raspi-alarm" */ = {
+		8ECA01499BBB126D881943884049D422 /* Build configuration list for PBXNativeTarget "Pods-raspi-alarmTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				020AFDE858A008DD71811E07CE5734BD /* Debug */,
-				4EE8D3C341F928EFD5D8040B3BD8CCDB /* Release */,
+				07BF3293498E259A4A0ACE67577F266E /* Debug */,
+				6E83A4C8BE223C665FE93B3D95065CA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C372924BFCF98A73855545C99DF1E657 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		9442D0C7E4BAFCE1F128F204A3C1891E /* Build configuration list for PBXNativeTarget "Pods-raspi-alarmUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FDCC8454899D5058778C75F41C1BE44 /* Debug */,
-				B480A5EC1879EBF94787856EB8AF1614 /* Release */,
+				CBC907955AF89129F95B33E3EA0F4D7E /* Debug */,
+				19078B80FDA208DDFBAEBDEADEDACAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

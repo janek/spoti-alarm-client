@@ -10,27 +10,43 @@ import Foundation
 import Alamofire
 
 struct Networker {
-//    let raspberryWebAddress = "https://bibo.serveo.net"
-    static var shared = Networker()
+
+    let timeoutInterval = 3.0
+
+    var deviceAddress = "192.168.178.175"
+    var baseURL: String {return "http://\(deviceAddress):3141"}
+
 
     func sendScheduleRequestToServer (
             minutes: String = "30",
             hours: String = "9",
             mode: MusicMode = .Spotify,
-            room: Room = .Janek,
             completion: @escaping (String)->()
     ) {
-        let address = "http://192.168.\(room.rawValue):3141"
-        AF.request(address + "/cronsave",
+        AF.request(baseURL + "/cronsave",
                    method: .post,
                    parameters: ["minutes": minutes, "hours": hours, "mode": mode.rawValue.lowercased()],
                    encoding: JSONEncoding.default).response { response in
                     if let error = response.error {
-                        completion("ERROR: \(error.localizedDescription)")
+                        completion("ERROR@\(self.deviceAddress): \(error.localizedDescription)")
                     } else {
                         let textResponse = String(data: response.data!, encoding: .utf8)
-                        completion("\(response.result) while setting to \(hours):\(minutes)@\(mode.rawValue)-pi:\(room.rawValue). Server response: \(textResponse ?? "<NONE>")")
+                        completion("\(response.result): \(mode.rawValue) at \(hours):\(minutes). \(self.deviceAddress) response: \(textResponse ?? "<NONE>")")
                     }
         }
     }
+
+    func sendStatusRequestToServer(completion: @escaping (String)->()) {
+        AF.request(baseURL + "/areyourunning", method: .get, requestModifier: { $0.timeoutInterval = self.timeoutInterval }).response {
+            response in
+            if let error = response.error {
+                completion("ERROR@\(self.deviceAddress): \(error.localizedDescription)")
+            } else {
+                let textResponse = String(data: response.data!, encoding: .utf8)
+                completion(textResponse ?? "No response")
+            }
+
+        }
+    }
+
 }

@@ -6,7 +6,7 @@ target 'raspi-alarm' do
   use_frameworks!
 
   # Pods for raspi-alarm
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 5.1'
 
   target 'raspi-alarmTests' do
     inherit! :search_paths
