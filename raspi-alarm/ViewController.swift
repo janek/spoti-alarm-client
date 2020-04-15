@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     var availableModes = [MusicMode.Spotify, .Luz] // TODO: change to allCases after updating to newer swift
 
     var room: Room = .Janek
-    var availableRooms = [Room.Janek, .Mila]
+    var availableRooms = [Room.Janek, .David]
 
     let networker = Networker.shared
 
@@ -71,8 +71,8 @@ class ViewController: UIViewController {
         switch chosenRoomString {
         case "Janek":
             room = .Janek
-        case "Mila":
-            room = .Mila
+        case "David":
+            room = .David
         default:
             assertionFailure()
         }
@@ -85,6 +85,6 @@ enum MusicMode: String {
 }
 
 enum Room: String {
-    case Janek = "175"
-    case Mila = "148"
+    case Janek = "178.175"
+    case David = "0.16"
 }

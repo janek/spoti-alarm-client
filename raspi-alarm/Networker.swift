@@ -20,7 +20,7 @@ struct Networker {
             room: Room = .Janek,
             completion: @escaping (String)->()
     ) {
-        let address = "http://192.168.178.\(room.rawValue):3141"
+        let address = "http://192.168.\(room.rawValue):3141"
         AF.request(address + "/cronsave",
                    method: .post,
                    parameters: ["minutes": minutes, "hours": hours, "mode": mode.rawValue.lowercased()],
