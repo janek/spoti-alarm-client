@@ -36,6 +36,7 @@ struct Networker {
         }
     }
 
+    // TODO: generalized "request to raspi" functions
     func sendStatusRequestToServer(completion: @escaping (String)->()) {
         AF.request(baseURL + "/areyourunning", method: .get, requestModifier: { $0.timeoutInterval = self.timeoutInterval }).response {
             response in
@@ -46,6 +47,30 @@ struct Networker {
                 completion(textResponse ?? "No response")
             }
 
+        }
+    }
+
+    func sendClearRequestToServer(completion: @escaping (String)->()) {
+        AF.request(baseURL + "/playpause", method: .get, requestModifier: { $0.timeoutInterval = self.timeoutInterval }).response {
+            response in
+            if let error = response.error {
+                completion("ERROR@\(self.deviceAddress): \(error.localizedDescription)")
+            } else {
+                let textResponse = String(data: response.data!, encoding: .utf8)
+                completion(textResponse ?? "No response")
+            }
+        }
+    }
+
+    func sendPlayRequestToServer(completion: @escaping (String)->()) {
+        AF.request(baseURL + "/spotiplay", method: .get, requestModifier: { $0.timeoutInterval = self.timeoutInterval }).response {
+            response in
+            if let error = response.error {
+                completion("ERROR@\(self.deviceAddress): \(error.localizedDescription)")
+            } else {
+                let textResponse = String(data: response.data!, encoding: .utf8)
+                completion(textResponse ?? "No response")
+            }
         }
     }
 

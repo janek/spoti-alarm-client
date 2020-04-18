@@ -35,6 +35,8 @@ class ViewController: UIViewController {
 
     @IBAction func triggerServerRequestFromButton(_ sender: UIButton) {
         switch sender.title(for: .normal) {
+        // XXX: Avoid stringly typing, consider wrapping in an enum
+        // or using view identifiers to be independent of button titles
         case "SET":
             setAlarmClock()
         case "IP":
@@ -46,11 +48,24 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
                 let textField = alert!.textFields![0]
                 self.networker.deviceAddress = textField.text!
+                print("new net add: ", self.networker.deviceAddress)
             }))
             self.present(alert, animated: true, completion: nil)
-
+        case "CLEAR":
+            // TODO: remove duplication
+            // - in completion requests of calling these functions
+            // - in calls to them (only endpoint and GET/PUT varies)
+            networker.sendClearRequestToServer(completion: { response in
+                print(response)
+                self.feedbackLabel.text = response + "\n" + self.feedbackLabel.text!
+                self.feedbackLabel.sizeToFit()})
         case "STATUS":
             networker.sendStatusRequestToServer(completion: { response in
+                print(response)
+                self.feedbackLabel.text = response + "\n" + self.feedbackLabel.text!
+                self.feedbackLabel.sizeToFit()})
+        case "PLAY":
+            networker.sendPlayRequestToServer(completion: { response in
                 print(response)
                 self.feedbackLabel.text = response + "\n" + self.feedbackLabel.text!
                 self.feedbackLabel.sizeToFit()})
