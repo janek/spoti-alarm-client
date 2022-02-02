@@ -51,7 +51,7 @@ struct Networker {
     }
 
     func sendClearRequestToServer(completion: @escaping (String)->()) {
-        AF.request(baseURL + "/playpause", method: .get, requestModifier: { $0.timeoutInterval = self.timeoutInterval }).response {
+        AF.request(baseURL + "/cronclean", method: .get, requestModifier: { $0.timeoutInterval = self.timeoutInterval }).response {
             response in
             if let error = response.error {
                 completion("ERROR@\(self.deviceAddress): \(error.localizedDescription)")
